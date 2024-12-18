@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
+import { Percent } from '@repo/sdk-core'
 import { BrowserEvent, InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { Percent } from '@uniswap/sdk-core'
 import { TraceEvent, useTrace } from 'analytics'
 import AnimatedDropdown from 'components/AnimatedDropdown'
 import Column from 'components/Column'

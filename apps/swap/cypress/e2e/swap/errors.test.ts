@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
+import { CurrencyAmount } from '@repo/sdk-core'
 import { InterfaceSectionName } from '@uniswap/analytics-events'
-import { CurrencyAmount } from '@uniswap/sdk-core'
 import { FeatureFlag } from 'featureFlags'
 
 import { DEFAULT_DEADLINE_FROM_NOW } from '../../../src/constants/misc'

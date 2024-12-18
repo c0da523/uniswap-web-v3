@@ -1,5 +1,5 @@
+import { ChainId, Currency } from '@repo/sdk-core'
 import { MaxUint256, PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
-import { ChainId, Currency } from '@uniswap/sdk-core'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20, Weth } from 'abis/types'
 import WETH_ABI from 'abis/weth.json'

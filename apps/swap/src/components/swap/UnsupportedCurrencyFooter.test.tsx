@@ -1,5 +1,5 @@
+import { Token } from '@repo/sdk-core'
 import userEvent from '@testing-library/user-event'
-import { Token } from '@uniswap/sdk-core'
 import { useUnsupportedTokens } from 'hooks/Tokens'
 import { mocked } from 'test-utils/mocked'
 import { act, render, screen, waitForElementToBeRemoved, within } from 'test-utils/render'

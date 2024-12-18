@@ -1,5 +1,5 @@
-import { Percent, TradeType } from '@uniswap/sdk-core'
-import { FlatFeeOptions } from '@uniswap/universal-router-sdk'
+import { Percent, TradeType } from '@repo/sdk-core'
+import { FlatFeeOptions } from '@repo/universal-router-sdk'
 import { FeeOptions } from '@uniswap/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { BigNumber } from 'ethers/lib/ethers'

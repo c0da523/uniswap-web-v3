@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@repo/sdk-core'
 import { USDC_MAINNET } from 'constants/tokens'
 import { usdcWethPoolAddress, validPoolToken0, validPoolToken1 } from 'test-utils/pools/fixtures'
 import { render, screen } from 'test-utils/render'

@@ -1,7 +1,7 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import type { TransactionResponse } from '@ethersproject/providers'
+import { Currency, CurrencyAmount, Token } from '@repo/sdk-core'
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent } from 'analytics'
 import { useTokenContract } from 'hooks/useContract'

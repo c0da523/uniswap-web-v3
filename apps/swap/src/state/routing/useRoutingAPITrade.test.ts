@@ -1,6 +1,6 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
+import { CurrencyAmount, TradeType } from '@repo/sdk-core'
 import { renderHook } from '@testing-library/react'
-import { CurrencyAmount, TradeType } from '@uniswap/sdk-core'
 import { AVERAGE_L1_BLOCK_TIME } from 'constants/chainInfo'
 import { ZERO_PERCENT } from 'constants/misc'
 import { USDC_MAINNET } from 'constants/tokens'

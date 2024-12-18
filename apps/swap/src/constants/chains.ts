@@ -1,4 +1,4 @@
-import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@uniswap/sdk-core'
+import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@repo/sdk-core'
 
 export const CHAIN_IDS_TO_NAMES = {
   [ChainId.MAINNET]: 'mainnet',

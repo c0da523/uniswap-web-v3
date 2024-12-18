@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@repo/sdk-core'
 import { useFeatureFlagsContext } from 'featureFlags'
 
 import { DynamicConfigName, useDynamicConfig } from '.'
