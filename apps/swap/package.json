@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/interface",
+  "name": "swap",
   "version": "1.1.0",
   "description": "Uniswap Interface",
   "license": "GPL-3.0-or-later",
@@ -7,32 +7,32 @@
     "ajv": "node scripts/compile-ajv-validators.js",
     "contracts:compile:abi": "typechain --target ethers-v5 --out-dir src/abis/types \"./src/abis/**/*.json\"",
     "contracts:compile:v3": "typechain --target ethers-v5 --out-dir src/types/v3 \"./node_modules/@uniswap/**/artifacts/contracts/**/*[!dbg].json\"",
-    "contracts": "yarn contracts:compile:abi && yarn contracts:compile:v3",
+    "contracts": "pnpm contracts:compile:abi && pnpm contracts:compile:v3",
     "graphql:fetch": "node scripts/fetch-schema.js",
     "graphql:generate:data": "graphql-codegen --config graphql.data.codegen.config.ts",
     "graphql:generate:thegraph": "graphql-codegen --config graphql.thegraph.codegen.config.ts",
-    "graphql:generate": "yarn graphql:generate:data && yarn graphql:generate:thegraph",
-    "graphql": "yarn graphql:fetch && yarn graphql:generate",
+    "graphql:generate": "pnpm graphql:generate:data && pnpm graphql:generate:thegraph",
+    "graphql": "pnpm graphql:fetch && pnpm graphql:generate",
     "sitemap:generate": "node scripts/generate-sitemap.js",
     "i18n:extract": "lingui extract --locale en-US",
     "i18n:compile": "lingui compile",
-    "i18n": "yarn i18n:extract --clean && yarn i18n:compile",
+    "i18n": "pnpm i18n:extract --clean && pnpm i18n:compile",
     "prepare": "concurrently \"npm:ajv\" \"npm:contracts\" \"npm:graphql\" \"npm:i18n\"",
     "start": "craco start",
-    "start:cloud": "NODE_OPTIONS=--dns-result-order=ipv4first PORT=3001 npx wrangler pages dev --compatibility-flags=nodejs_compat --compatibility-date=2023-08-01 --proxy=3001 --port=3000 -- yarn start",
+    "start:cloud": "NODE_OPTIONS=--dns-result-order=ipv4first PORT=3001 npx wrangler pages dev --compatibility-flags=nodejs_compat --compatibility-date=2023-08-01 --proxy=3001 --port=3000 -- pnpm start",
     "build": "craco build",
     "analyze": "source-map-explorer 'build/static/js/*.js' --no-border-checks --gzip",
     "serve": "serve build -s -l 3000",
-    "lint": "yarn eslint --ignore-path .gitignore --cache --cache-location node_modules/.cache/eslint/ .",
+    "lint": "pnpm eslint --ignore-path .gitignore --cache --cache-location node_modules/.cache/eslint/ .",
     "typecheck": "tsc",
     "typecheck:cloud": "tsc -p functions/tsconfig.json",
     "typecheck:cypress": "tsc -p cypress/tsconfig.json",
     "test": "craco test",
-    "test:cloud": "yarn jest functions --config=functions/jest.config.json",
+    "test:cloud": "pnpm jest functions --config=functions/jest.config.json",
     "cypress:open": "cypress open --browser chrome --e2e",
     "cypress:run": "cypress run --browser chrome --e2e",
-    "deduplicate": "yarn-deduplicate --strategy=highest",
-    "postinstall": "yarn patch-package"
+    "deduplicate": "pnpm dedupe",
+    "postinstall": "patch-package"
   },
   "husky": {
     "hooks": {
@@ -40,8 +40,8 @@
     }
   },
   "lint-staged": {
-    "yarn.lock": [
-      "yarn deduplicate"
+    "pnpm-lock.yaml": [
+      "pnpm dedupe"
     ]
   },
   "jest": {
@@ -162,8 +162,7 @@
     "typescript": "^4.9.4",
     "webpack": "^5.88.2",
     "webpack-retry-chunk-load-plugin": "^3.1.1",
-    "wrangler": "^3.7.0",
-    "yarn-deduplicate": "^6.0.0"
+    "wrangler": "^3.7.0"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
