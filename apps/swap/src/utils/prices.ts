@@ -1,7 +1,7 @@
 import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@repo/sdk-core'
 import { Trade } from '@repo/router-sdk'
-import { Pair } from '@uniswap/v2-sdk'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Pair } from '@repo/v2-sdk'
+import { FeeAmount } from '@repo/v3-sdk'
 import { DefaultTheme } from 'styled-components'
 
 import {

@@ -1,6 +1,6 @@
 import { Interface } from '@ethersproject/abi'
 import { Currency, CurrencyAmount } from '@repo/sdk-core'
-import { toHex } from '@uniswap/v3-sdk'
+import { toHex } from '@repo/v3-sdk'
 
 import { Erc20Interface } from '../abis/types/Erc20'
 

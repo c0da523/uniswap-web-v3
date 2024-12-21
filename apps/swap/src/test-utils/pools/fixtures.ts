@@ -1,7 +1,7 @@
 import { QueryResult } from '@apollo/client'
 import { BigNumber } from '@ethersproject/bignumber'
 import { ChainId, Currency, WETH9 } from '@repo/sdk-core'
-import { FeeAmount, Pool, Position } from '@uniswap/v3-sdk'
+import { FeeAmount, Pool, Position } from '@repo/v3-sdk'
 import { USDC_MAINNET } from 'constants/tokens'
 import { Chain, Exact, TokenProjectQuery } from 'graphql/data/__generated__/types-and-hooks'
 import { Token } from 'graphql/thegraph/__generated__/types-and-hooks'

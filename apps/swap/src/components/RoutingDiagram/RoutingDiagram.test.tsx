@@ -1,6 +1,6 @@
 import { Currency, Percent } from '@repo/sdk-core'
 import { Protocol } from '@repo/router-sdk'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@repo/v3-sdk'
 import { DAI, USDC_MAINNET, WBTC } from 'constants/tokens'
 import { render } from 'test-utils/render'
 import { RoutingDiagramEntry } from 'utils/getRoutingDiagramEntries'

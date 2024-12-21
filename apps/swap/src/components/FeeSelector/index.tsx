@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { Currency } from '@repo/sdk-core'
 import { FeePoolSelectAction, LiquidityEventName } from '@uniswap/analytics-events'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@repo/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { ButtonGray } from 'components/Button'

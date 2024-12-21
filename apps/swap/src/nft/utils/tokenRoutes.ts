@@ -1,7 +1,7 @@
 import { Currency, CurrencyAmount } from '@repo/sdk-core'
 import { IRoute, Protocol } from '@repo/router-sdk'
-import { Pair } from '@uniswap/v2-sdk'
-import { Pool } from '@uniswap/v3-sdk'
+import { Pair } from '@repo/v2-sdk'
+import { Pool } from '@repo/v3-sdk'
 import { TokenAmountInput, TokenTradeRouteInput, TradePoolInput } from 'graphql/data/__generated__/types-and-hooks'
 import { ClassicTrade } from 'state/routing/types'
 
