@@ -10,4 +10,3 @@ export * from './entities/mixedRoute/route'
 export * from './entities/mixedRoute/trade'
 export * from './utils/encodeMixedRouteToPath'
 export * from './utils'
-// 这里呢
