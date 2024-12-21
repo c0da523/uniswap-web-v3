@@ -6517,6 +6517,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@repo/router-sdk@^1.6.0, @repo/router-sdk@workspace:packages/router-sdk":
+  version: 0.0.0-use.local
+  resolution: "@repo/router-sdk@workspace:packages/router-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@repo/sdk-core": "workspace:^"
+    "@types/jest": ^24.0.25
+    "@uniswap/swap-router-contracts": 1.1.0
+    "@uniswap/v2-sdk": ^3.2.0
+    "@uniswap/v3-sdk": ^3.10.0
+    prettier: ^2.4.1
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
 "@repo/sdk-core@workspace:^, @repo/sdk-core@workspace:packages/sdk-core":
   version: 0.0.0-use.local
   resolution: "@repo/sdk-core@workspace:packages/sdk-core"
@@ -6539,13 +6554,13 @@ __metadata:
   resolution: "@repo/universal-router-sdk@workspace:packages/universal-router-sdk"
   dependencies:
     "@ethersproject/abi": ^5.7.0
+    "@repo/router-sdk": ^1.6.0
     "@repo/sdk-core": "workspace:^"
     "@types/chai": ^4.2.18
     "@types/mocha": ^8.2.2
     "@types/node": ^15.12.2
     "@types/node-fetch": ^2.6.2
     "@uniswap/permit2-sdk": ^1.2.0
-    "@uniswap/router-sdk": ^1.6.0
     "@uniswap/universal-router": 1.4.3
     "@uniswap/v2-sdk": 3.2.0
     "@uniswap/v3-sdk": 3.10.0
@@ -27858,7 +27873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.2, prettier@npm:^2.3.1, prettier@npm:^2.6.2, prettier@npm:^2.8.0, prettier@npm:^2.8.8":
+"prettier@npm:^2.1.2, prettier@npm:^2.3.1, prettier@npm:^2.4.1, prettier@npm:^2.6.2, prettier@npm:^2.8.0, prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
@@ -32065,6 +32080,7 @@ __metadata:
     "@reach/dialog": ^0.10.3
     "@reach/portal": ^0.10.3
     "@reduxjs/toolkit": ^1.9.3
+    "@repo/router-sdk": ^1.6.0
     "@repo/sdk-core": "workspace:^"
     "@repo/universal-router-sdk": "workspace:^"
     "@sentry/react": ^7.45.0
@@ -32112,7 +32128,6 @@ __metadata:
     "@uniswap/merkle-distributor": ^1.0.1
     "@uniswap/permit2-sdk": ^1.2.0
     "@uniswap/redux-multicall": ^1.1.8
-    "@uniswap/router-sdk": ^1.6.0
     "@uniswap/smart-order-router": 3.15.0
     "@uniswap/token-lists": ^1.0.0-beta.33
     "@uniswap/uniswapx-sdk": ^1.4.1
