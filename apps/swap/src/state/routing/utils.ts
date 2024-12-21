@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@repo/sdk-core'
-import { MixedRouteSDK } from '@uniswap/router-sdk'
+import { MixedRouteSDK } from '@repo/router-sdk'
 import { DutchOrderInfo, DutchOrderInfoJSON } from '@uniswap/uniswapx-sdk'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'

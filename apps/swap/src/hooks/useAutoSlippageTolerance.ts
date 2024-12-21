@@ -1,5 +1,5 @@
 import { Currency, CurrencyAmount, Percent, TradeType } from '@repo/sdk-core'
-import { MixedRoute, partitionMixedRouteByProtocol, Protocol, Trade } from '@uniswap/router-sdk'
+import { MixedRoute, partitionMixedRouteByProtocol, Protocol, Trade } from '@repo/router-sdk'
 import { Pair } from '@uniswap/v2-sdk'
 import { Pool } from '@uniswap/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
