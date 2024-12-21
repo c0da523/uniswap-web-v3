@@ -26,7 +26,7 @@
     "@openzeppelin/=node_modules/@openzeppelin/",
     "@uniswap/=node_modules/@uniswap/",
     "base64-sol/=node_modules/base64-sol/",
-    "hardhat/=node_modules/swap/node_modules/hardhat/",
+    "hardhat/=node_modules/hardhat/",
     "openzeppelin-solidity-2.3.0/=node_modules/openzeppelin-solidity-2.3.0/",
     "openzeppelin-solidity/=node_modules/openzeppelin-solidity-2.3.0/node_modules/openzeppelin-solidity/"
   ],
