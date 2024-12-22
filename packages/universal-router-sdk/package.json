@@ -2,8 +2,9 @@
   "name": "@repo/universal-router-sdk",
   "version": "1.5.8",
   "description": "sdk for integrating with the Universal Router contracts",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
+  "module": "src/index.ts",
   "files": [
     "dist"
   ],

@@ -3,8 +3,8 @@
   "license": "MIT",
   "version": "0.0.0",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
   "files": [
     "dist"
   ],
@@ -13,7 +13,7 @@
     "uniswap",
     "ethereum"
   ],
-  "module": "dist/sdk-core.esm.js",
+  "module": "src/index.ts",
   "scripts": {
     "build": "tsdx build",
     "start": "tsdx watch",

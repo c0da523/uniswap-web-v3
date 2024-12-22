@@ -24,7 +24,6 @@
     "prepare": "npm run build",
     "typechain": "typechain --target=ethers-v5 --out-dir src/contracts --glob ./abis/**/*.json"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "yarn fix"
@@ -54,8 +53,8 @@
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
-    "@uniswap/permit2-sdk": "^1.2.0",
     "@repo/sdk-core": "workspace:^",
+    "@uniswap/permit2-sdk": "^1.2.0",
     "ethers": "^5.7.0"
   }
 }

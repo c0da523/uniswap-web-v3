@@ -3,8 +3,8 @@
   "license": "MIT",
   "version": "3.2.0",
   "description": "🛠 An SDK for building applications on top of Uniswap V2",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "typings": "src/index.ts",
   "files": [
     "dist"
   ],
@@ -13,7 +13,7 @@
     "uniswap",
     "ethereum"
   ],
-  "module": "dist/v2-sdk.esm.js",
+  "module": "src/index.ts",
   "scripts": {
     "lint": "tsdx lint src test",
     "build": "tsdx build",
