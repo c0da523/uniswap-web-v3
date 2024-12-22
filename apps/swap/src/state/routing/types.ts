@@ -1,6 +1,6 @@
 import { ChainId, Currency, CurrencyAmount, Fraction, Percent, Price, Token, TradeType } from '@repo/sdk-core'
 import { MixedRouteSDK, ONE, Protocol, Trade } from '@repo/router-sdk'
-import { DutchOrderInfo, DutchOrderInfoJSON, DutchOrderTrade as IDutchOrderTrade } from '@uniswap/uniswapx-sdk'
+import { DutchOrderInfo, DutchOrderInfoJSON, DutchOrderTrade as IDutchOrderTrade } from '@repo/uniswapx-sdk'
 import { Route as V2Route } from '@repo/v2-sdk'
 import { Route as V3Route } from '@repo/v3-sdk'
 import { ZERO_PERCENT } from 'constants/misc'

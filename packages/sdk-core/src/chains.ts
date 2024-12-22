@@ -32,7 +32,6 @@ export const SUPPORTED_CHAINS = [
   ChainId.CELO_ALFAJORES,
   ChainId.CELO,
   ChainId.BNB,
-  ChainId.BNB_TESTNET,
   ChainId.AVALANCHE,
   ChainId.BASE,
   ChainId.BASE_GOERLI,

@@ -31,18 +31,7 @@
     "test:cloud": "yarn jest functions --config=functions/jest.config.json",
     "cypress:open": "cypress open --browser chrome --e2e",
     "cypress:run": "cypress run --browser chrome --e2e",
-    "deduplicate": "yarn dedupe",
     "postinstall": "patch-package"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "yarn-lock.yaml": [
-      "yarn dedupe"
-    ]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -221,7 +210,7 @@
     "@uniswap/permit2-sdk": "^1.2.0",
     "@uniswap/redux-multicall": "^1.1.8",
     "@uniswap/token-lists": "^1.0.0-beta.33",
-    "@uniswap/uniswapx-sdk": "^1.4.1",
+    "@repo/uniswapx-sdk": "workspace:^",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@uniswap/v3-core": "^1.0.1",

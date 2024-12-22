@@ -119,6 +119,7 @@ export const FALLBACK_URLS = {
     'https://1rpc.io/base',
     'https://base.meowrpc.com',
   ],
+  [ChainId.EXP_CHAIN_TESTNET]: ['https://rpc0-testnet.expchain.ai', 'https://rpc1-testnet.expchain.ai'],
 }
 
 /**
@@ -156,4 +157,5 @@ export const RPC_URLS = {
   [ChainId.BNB]: [QUICKNODE_BNB_RPC_URL, ...FALLBACK_URLS[ChainId.BNB]],
   [ChainId.AVALANCHE]: [`https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.AVALANCHE]],
   [ChainId.BASE]: [`https://base-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.BASE]],
+  [ChainId.EXP_CHAIN_TESTNET]: [...FALLBACK_URLS[ChainId.EXP_CHAIN_TESTNET]],
 }

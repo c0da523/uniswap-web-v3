@@ -82,15 +82,7 @@ const BNB_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
   swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2'
 }
-const BNB_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x39F0927854FB42137171d294626686fEaDd502dE',
-  multicallAddress: '0xe1ae1788AC8A503e2305b452547599BfBBd3984B',
-  quoterAddress: '0x78D78E420Da98ad378D7799bE8f4AF69033EB077', // 缺少
-  v3MigratorAddress: '', // 应该也不用
-  nonfungiblePositionManagerAddress: '0x21228d774d636840144Ac72C3E80775aCc16F14E',
-  tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
-  swapRouter02Address: '0x55B085acb26492C9964B5a893785437343aA51e2'
-}
+
 
 // optimism goerli addresses
 const OPTIMISM_GOERLI_ADDRESSES: ChainAddresses = {
@@ -154,6 +146,16 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
 }
 
+const EXP_CHAIN_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x39F0927854FB42137171d294626686fEaDd502dE',
+  multicallAddress: '0xe1ae1788AC8A503e2305b452547599BfBBd3984B',
+  quoterAddress: '0x78D78E420Da98ad378D7799bE8f4AF69033EB077', // 缺少
+  v3MigratorAddress: '', // 应该也不用
+  nonfungiblePositionManagerAddress: '0x21228d774d636840144Ac72C3E80775aCc16F14E',
+  tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
+  swapRouter02Address: '0x55B085acb26492C9964B5a893785437343aA51e2'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -164,7 +166,6 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.CELO]: CELO_ADDRESSES,
   [ChainId.CELO_ALFAJORES]: CELO_ADDRESSES,
   [ChainId.BNB]: BNB_ADDRESSES,
-  [ChainId.BNB_TESTNET]: BNB_TESTNET_ADDRESSES,
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
@@ -172,7 +173,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   // todo 修改
-  [ChainId.EXP_CHAIN_TESTNET]: BASE_GOERLI_ADDRESSES
+  [ChainId.EXP_CHAIN_TESTNET]: EXP_CHAIN_TESTNET_ADDRESSES
 }
 
 /* V3 Contract Addresses */
