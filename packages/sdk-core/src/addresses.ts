@@ -172,7 +172,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   // todo 修改
-  [ChainId.EXP_TESTNET]: BASE_GOERLI_ADDRESSES
+  [ChainId.EXP_CHAIN_TESTNET]: BASE_GOERLI_ADDRESSES
 }
 
 /* V3 Contract Addresses */
