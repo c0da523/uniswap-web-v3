@@ -11,16 +11,16 @@ const Container = styled.div`
 
 export function GitVersionRow() {
   const [isCopied, staticCopy] = useCopyClipboard()
-  return process.env.REACT_APP_GIT_COMMIT_HASH ? (
+  return import.meta.env.REACT_APP_GIT_COMMIT_HASH ? (
     <Container
       onClick={() => {
-        staticCopy(process.env.REACT_APP_GIT_COMMIT_HASH as string)
+        staticCopy(import.meta.env.REACT_APP_GIT_COMMIT_HASH as string)
       }}
     >
       <Tooltip text="Copied" show={isCopied}>
         <ThemedText.BodySmall color="neutral3">
           <Trans>Version: </Trans>
-          {' ' + process.env.REACT_APP_GIT_COMMIT_HASH.substring(0, 6)}
+          {' ' + import.meta.env.REACT_APP_GIT_COMMIT_HASH.substring(0, 6)}
         </ThemedText.BodySmall>
       </Tooltip>
     </Container>

@@ -28,11 +28,11 @@ interface MoonpayIPAddressesResponse {
 }
 
 async function getMoonpayAvailability(): Promise<boolean> {
-  const moonpayPublishableKey = process.env.REACT_APP_MOONPAY_PUBLISHABLE_KEY
+  const moonpayPublishableKey = import.meta.env.REACT_APP_MOONPAY_PUBLISHABLE_KEY
   if (!moonpayPublishableKey) {
     throw new Error('Must provide a publishable key for moonpay.')
   }
-  const moonpayApiURI = process.env.REACT_APP_MOONPAY_API
+  const moonpayApiURI = import.meta.env.REACT_APP_MOONPAY_API
   if (!moonpayApiURI) {
     throw new Error('Must provide an api endpoint for moonpay.')
   }

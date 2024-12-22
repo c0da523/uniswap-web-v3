@@ -1,4 +1,4 @@
-import { ASSET_PAGE_SIZE } from 'graphql/data/nft/Asset'
+import { ASSET_PAGE_SIZE } from '@src/graphql/data/nft/Asset'
 import { loadingAsset } from 'nft/css/loading.css'
 
 import SizingImage from '../../../assets/images/sizingImage.png'

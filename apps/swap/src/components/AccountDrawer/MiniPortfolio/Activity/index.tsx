@@ -1,7 +1,7 @@
+import { PollingInterval } from '@src/graphql/data/util'
 import { useAccountDrawer } from 'components/AccountDrawer'
 import Column from 'components/Column'
 import { LoadingBubble } from 'components/Tokens/loading'
-import { PollingInterval } from 'graphql/data/util'
 import { atom, useAtom } from 'jotai'
 import { EmptyWalletModule } from 'nft/components/profile/view/EmptyWalletContent'
 import { useEffect, useMemo } from 'react'

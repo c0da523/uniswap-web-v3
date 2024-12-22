@@ -1,9 +1,9 @@
 import { CurrencyAmount, Percent } from '@repo/sdk-core'
+import { Currency } from '@src/graphql/data/__generated__/types-and-hooks'
+import { useLocalCurrencyConversionRate } from '@src/graphql/data/ConversionRate'
 import { renderHook } from '@testing-library/react'
 import { USDC_MAINNET } from 'constants/tokens'
 import { useCurrencyConversionFlagEnabled } from 'featureFlags/flags/currencyConversion'
-import { Currency } from 'graphql/data/__generated__/types-and-hooks'
-import { useLocalCurrencyConversionRate } from 'graphql/data/ConversionRate'
 import { useActiveLocalCurrency } from 'hooks/useActiveLocalCurrency'
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import { mocked } from 'test-utils/mocked'
@@ -12,7 +12,7 @@ import { NumberType, useFormatter } from './formatNumbers'
 
 jest.mock('hooks/useActiveLocale')
 jest.mock('hooks/useActiveLocalCurrency')
-jest.mock('graphql/data/ConversionRate')
+jest.mock('@src/graphql/data/ConversionRate')
 jest.mock('featureFlags/flags/currencyConversion')
 
 describe('formatNumber', () => {

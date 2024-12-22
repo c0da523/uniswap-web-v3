@@ -1,4 +1,4 @@
-import { NftRouteResponse, NftTrade } from 'graphql/data/__generated__/types-and-hooks'
+import { NftRouteResponse, NftTrade } from '@src/graphql/data/__generated__/types-and-hooks'
 import { Markets, RouteResponse, RoutingActions, RoutingItem, TokenType } from 'nft/types'
 
 function buildRoutingItem(routingItem: NftTrade): RoutingItem {

@@ -1,5 +1,5 @@
 import { Currency } from '@repo/sdk-core'
-import { TokenTradeInput } from 'graphql/data/__generated__/types-and-hooks'
+import { TokenTradeInput } from '@src/graphql/data/__generated__/types-and-hooks'
 import { devtools } from 'zustand/middleware'
 import { shallow } from 'zustand/shallow'
 import { createWithEqualityFn } from 'zustand/traditional'

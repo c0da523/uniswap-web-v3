@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
+import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { getYear, isSameDay, isSameMonth, isSameWeek, isSameYear } from 'date-fns'
-import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
 
 import { Activity } from './types'
 

@@ -1,4 +1,4 @@
-import { Currency } from 'graphql/data/__generated__/types-and-hooks'
+import { Currency } from '@src/graphql/data/__generated__/types-and-hooks'
 import { ReactNode } from 'react'
 
 import {

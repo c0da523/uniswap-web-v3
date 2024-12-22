@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+import { PricePoint, TimePeriod } from '@src/graphql/data/util'
 import { AxisBottom } from '@visx/axis'
 import { localPoint } from '@visx/event'
 import { EventType } from '@visx/event/lib/types'
@@ -11,7 +12,6 @@ import { getTimestampFormatter, TimestampFormatterType } from 'components/Charts
 import { getNearestPricePoint, getTicks } from 'components/Charts/PriceChart/utils'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { curveCardinal } from 'd3'
-import { PricePoint, TimePeriod } from 'graphql/data/util'
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import { ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
 import { Info } from 'react-feather'

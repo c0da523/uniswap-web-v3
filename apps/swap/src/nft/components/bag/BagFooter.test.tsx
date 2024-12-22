@@ -2,9 +2,9 @@ import { BigNumber } from '@ethersproject/bignumber'
 import { parseEther } from '@ethersproject/units'
 import { ChainId, CurrencyAmount, Percent } from '@repo/sdk-core'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@repo/universal-router-sdk'
+import { getURAddress, useNftUniversalRouterAddress } from '@src/graphql/data/nft/NftUniversalRouterAddress'
 import { useWeb3React } from '@web3-react/core'
 import { nativeOnChain } from 'constants/tokens'
-import { getURAddress, useNftUniversalRouterAddress } from 'graphql/data/nft/NftUniversalRouterAddress'
 import { useCurrency } from 'hooks/Tokens'
 import usePermit2Allowance, { AllowanceState } from 'hooks/usePermit2Allowance'
 import { useTokenBalance } from 'lib/hooks/useCurrencyBalance'
@@ -30,8 +30,8 @@ jest.mock('lib/hooks/useCurrencyBalance')
 jest.mock('hooks/Tokens')
 jest.mock('nft/hooks/usePayWithAnyTokenSwap')
 jest.mock('nft/hooks/useDerivedPayWithAnyTokenSwapInfo')
-jest.mock('graphql/data/nft/NftUniversalRouterAddress', () => {
-  const originalModule = jest.requireActual('graphql/data/nft/NftUniversalRouterAddress')
+jest.mock('@src/graphql/data/nft/NftUniversalRouterAddress', () => {
+  const originalModule = jest.requireActual('@src/graphql/data/nft/NftUniversalRouterAddress')
   return {
     ...originalModule,
     useNftUniversalRouterAddress: jest.fn(),

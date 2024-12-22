@@ -1,5 +1,5 @@
 import { Percent } from '@repo/sdk-core'
-import { PermitInput, TokenTradeRoutesInput, TokenTradeType } from 'graphql/data/__generated__/types-and-hooks'
+import { PermitInput, TokenTradeRoutesInput, TokenTradeType } from '@src/graphql/data/__generated__/types-and-hooks'
 import { Allowance } from 'hooks/usePermit2Allowance'
 import { buildAllTradeRouteInputs } from 'nft/utils/tokenRoutes'
 import { useEffect } from 'react'

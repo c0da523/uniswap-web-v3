@@ -1,4 +1,4 @@
-/// <reference types="react-scripts" />
+/// <reference types="vite/client" />
 
 declare module '@metamask/jazzicon' {
   export default function (diameter: number, seed: number): HTMLElement

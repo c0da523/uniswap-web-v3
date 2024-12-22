@@ -5,8 +5,8 @@ import 'tracing'
 import 'connection/eagerlyConnect'
 
 import { ApolloProvider } from '@apollo/client'
-import { FeatureFlagsProvider } from 'featureFlags'
-import { apolloClient } from 'graphql/data/apollo'
+import { FeatureFlagsProvider } from '@src/featureFlags'
+import { apolloClient } from '@src/graphql/data/apollo'
 import { BlockNumberProvider } from 'lib/hooks/useBlockNumber'
 import { MulticallUpdater } from 'lib/state/multicall'
 import { StrictMode } from 'react'
@@ -21,7 +21,6 @@ import { isBrowserRouterEnabled } from 'utils/env'
 import Web3Provider from './components/Web3Provider'
 import { LanguageProvider } from './i18n'
 import App from './pages/App'
-import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import store from './state'
 import ApplicationUpdater from './state/application/updater'
 import ListsUpdater from './state/lists/updater'
@@ -87,7 +86,3 @@ createRoot(container).render(
     </Provider>
   </StrictMode>
 )
-
-if (process.env.REACT_APP_SERVICE_WORKER !== 'false') {
-  serviceWorkerRegistration.register()
-}

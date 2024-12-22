@@ -1,9 +1,9 @@
 import { Trans } from '@lingui/macro'
 import { ChainId } from '@repo/sdk-core'
+import { NftActivityType, NftMarketplace, OrderStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { InterfacePageName, NFTEventName } from '@uniswap/analytics-events'
 import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { MouseoverTooltip } from 'components/Tooltip'
-import { NftActivityType, NftMarketplace, OrderStatus } from 'graphql/data/__generated__/types-and-hooks'
 import { Box } from 'nft/components/Box'
 import { Column, Row } from 'nft/components/Flex'
 import {

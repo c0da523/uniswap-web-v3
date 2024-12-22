@@ -1,6 +1,6 @@
 import { Token } from '@repo/sdk-core'
 import { FeeAmount, TICK_SPACINGS } from '@repo/v3-sdk'
-import { TickData } from 'graphql/thegraph/AllV3TicksQuery'
+import { TickData } from '@src/graphql/thegraph/AllV3TicksQuery'
 import { TickProcessed } from 'hooks/usePoolTickData'
 import JSBI from 'jsbi'
 

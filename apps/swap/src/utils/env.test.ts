@@ -1,13 +1,13 @@
 import { isDevelopmentEnv, isProductionEnv, isStagingEnv, isTestEnv } from './env'
 
 describe('env', () => {
-  const ENV = process.env
+  const ENV = import.meta.env
   afterEach(() => {
-    process.env = ENV
+    import.meta.env = ENV
   })
 
   function setEnv(env: Record<string, unknown>) {
-    process.env = {
+    import.meta.env = {
       PUBLIC_URL: 'http://example.com',
       NODE_ENV: 'development',
       ...env,

@@ -15,6 +15,7 @@ module.exports = {
       rules: {
         'multiline-comment-style': ['error', 'separate-lines'],
         'rulesdir/no-undefined-or': 'error',
+        'import/no-unused-modules': 'off',
       },
     },
     {

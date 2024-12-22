@@ -1,6 +1,6 @@
+import { Chain } from '@src/graphql/data/__generated__/types-and-hooks'
+import { supportedChainIdFromGQLChain } from '@src/graphql/data/util'
 import { MATIC_POLYGON, nativeOnChain } from 'constants/tokens'
-import { Chain } from 'graphql/data/__generated__/types-and-hooks'
-import { supportedChainIdFromGQLChain } from 'graphql/data/util'
 
 export function getNativeTokenDBAddress(chain: Chain): string | undefined {
   const pageChainId = supportedChainIdFromGQLChain(chain)

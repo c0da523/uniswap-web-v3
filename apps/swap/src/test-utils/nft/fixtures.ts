@@ -1,4 +1,4 @@
-import { MediaType, NftActivityType, NftStandard, OrderStatus } from 'graphql/data/__generated__/types-and-hooks'
+import { MediaType, NftActivityType, NftStandard, OrderStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { ActivityEvent, GenieAsset, Markets, WalletAsset } from 'nft/types'
 
 export const TEST_NFT_ASSET: GenieAsset = {

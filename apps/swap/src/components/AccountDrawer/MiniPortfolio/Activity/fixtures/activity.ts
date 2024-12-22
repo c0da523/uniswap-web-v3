@@ -1,5 +1,4 @@
 import { ChainId, NONFUNGIBLE_POSITION_MANAGER_ADDRESSES, WETH9 } from '@repo/sdk-core'
-import { DAI } from 'constants/tokens'
 import {
   AssetActivityPartsFragment,
   Chain,
@@ -10,7 +9,8 @@ import {
   TransactionDirection,
   TransactionStatus,
   TransactionType,
-} from 'graphql/data/__generated__/types-and-hooks'
+} from '@src/graphql/data/__generated__/types-and-hooks'
+import { DAI } from 'constants/tokens'
 
 import { MOONPAY_SENDER_ADDRESSES } from '../../constants'
 

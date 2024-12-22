@@ -1,4 +1,4 @@
-import { TimePeriod } from 'graphql/data/util'
+import { TimePeriod } from '@src/graphql/data/util'
 import { render, screen } from 'test-utils/render'
 
 import { PriceChart } from '.'

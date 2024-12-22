@@ -1,5 +1,5 @@
 import { t } from '@lingui/macro'
-import { SwapOrderStatus, TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
+import { SwapOrderStatus, TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { UniswapXOrderStatus } from 'lib/hooks/orders/types'
 import { TransactionType } from 'state/transactions/types'
 

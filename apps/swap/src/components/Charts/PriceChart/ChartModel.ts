@@ -1,5 +1,5 @@
+import { PricePoint } from '@src/graphql/data/util'
 import { ScaleLinear, scaleLinear } from 'd3'
-import { PricePoint } from 'graphql/data/util'
 
 import { cleanPricePoints, getPriceBounds } from './utils'
 

@@ -1,4 +1,4 @@
-import { MediaType, NftStandard } from 'graphql/data/__generated__/types-and-hooks'
+import { MediaType, NftStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 import { SortBy } from 'nft/hooks'
 
 import { SellOrder } from '../sell'

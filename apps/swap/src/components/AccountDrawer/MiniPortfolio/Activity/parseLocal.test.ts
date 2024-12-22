@@ -1,7 +1,7 @@
 import { ChainId, Token, TradeType as MockTradeType } from '@repo/sdk-core'
 import { PERMIT2_ADDRESS } from '@repo/universal-router-sdk'
+import { TransactionStatus as MockTxStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { DAI as MockDAI, nativeOnChain, USDC_MAINNET as MockUSDC_MAINNET, USDT as MockUSDT } from 'constants/tokens'
-import { TransactionStatus as MockTxStatus } from 'graphql/data/__generated__/types-and-hooks'
 import { ChainTokenMap } from 'hooks/Tokens'
 import {
   ExactInputSwapTransactionInfo,

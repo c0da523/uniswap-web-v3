@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
+import { NftStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 import Row from 'components/Row'
 import { MouseoverTooltip } from 'components/Tooltip'
-import { NftStandard } from 'graphql/data/__generated__/types-and-hooks'
 import { getMarketplaceIcon } from 'nft/components/card/utils'
 import { CollectionSelectedAssetIcon } from 'nft/components/icons'
 import { Markets } from 'nft/types'

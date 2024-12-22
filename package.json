@@ -17,6 +17,9 @@
     "yarn": "3.2.3"
   },
   "packageManager": "yarn@3.2.3",
+  "resolutions": {
+    "typescript": "4.9.5"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"

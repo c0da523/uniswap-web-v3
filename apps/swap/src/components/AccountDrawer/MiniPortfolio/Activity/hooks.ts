@@ -1,4 +1,4 @@
-import { TransactionStatus, useActivityQuery } from 'graphql/data/__generated__/types-and-hooks'
+import { TransactionStatus, useActivityQuery } from '@src/graphql/data/__generated__/types-and-hooks'
 import { useEffect, useMemo } from 'react'
 import { usePendingOrders } from 'state/signatures/hooks'
 import { usePendingTransactions, useTransactionCanceller } from 'state/transactions/hooks'

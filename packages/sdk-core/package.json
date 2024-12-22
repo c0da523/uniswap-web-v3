@@ -30,6 +30,7 @@
     "toformat": "^2.0.0"
   },
   "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
     "@types/big.js": "^4.0.5",
     "@types/jest": "^24.0.25",
     "tsdx": "^0.14.1"

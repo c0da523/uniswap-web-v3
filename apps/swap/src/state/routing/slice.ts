@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
-import { TradeType } from '@repo/sdk-core'
 import { Protocol } from '@repo/router-sdk'
+import { TradeType } from '@repo/sdk-core'
 import { sendAnalyticsEvent } from 'analytics'
 import { isUniswapXSupportedChain } from 'constants/chains'
 import ms from 'ms'
@@ -21,7 +21,7 @@ import {
 } from './types'
 import { isExactInput, transformRoutesToTrade } from './utils'
 
-const UNISWAP_API_URL = process.env.REACT_APP_UNISWAP_API_URL
+const UNISWAP_API_URL = import.meta.env.REACT_APP_UNISWAP_API_URL
 if (UNISWAP_API_URL === undefined) {
   throw new Error(`UNISWAP_API_URL must be a defined environment variable`)
 }

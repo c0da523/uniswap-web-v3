@@ -1,4 +1,4 @@
-import { Chain, Currency, Token, TokenBalance, TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
+import { Chain, Currency, Token, TokenBalance, TokenStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 
 import { splitHiddenTokens } from './splitHiddenTokens'
 

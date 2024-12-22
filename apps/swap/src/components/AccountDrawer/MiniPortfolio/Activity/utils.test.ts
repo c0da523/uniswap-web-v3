@@ -1,4 +1,4 @@
-import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks' // Replace with the actual import if this is incorrect
+import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks' // Replace with the actual import if this is incorrect
 
 import { Activity } from './types'
 import { createGroups } from './utils'

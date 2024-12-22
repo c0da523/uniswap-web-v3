@@ -169,7 +169,7 @@ export default function App() {
           waitForInitialization={false}
           options={{
             environment: { tier: getEnvName() },
-            api: process.env.REACT_APP_STATSIG_PROXY_URL,
+            api: import.meta.env.REACT_APP_STATSIG_PROXY_URL,
           }}
         >
           <UserPropertyUpdater />
@@ -224,7 +224,7 @@ function UserPropertyUpdater() {
     user.set(CustomUserProperties.BROWSER, getBrowser())
     user.set(CustomUserProperties.SCREEN_RESOLUTION_HEIGHT, window.screen.height)
     user.set(CustomUserProperties.SCREEN_RESOLUTION_WIDTH, window.screen.width)
-    user.set(CustomUserProperties.GIT_COMMIT_HASH, process.env.REACT_APP_GIT_COMMIT_HASH ?? 'unknown')
+    user.set(CustomUserProperties.GIT_COMMIT_HASH, import.meta.env.REACT_APP_GIT_COMMIT_HASH ?? 'unknown')
 
     // Service Worker analytics
     const isServiceWorkerInstalled = Boolean(window.navigator.serviceWorker?.controller)

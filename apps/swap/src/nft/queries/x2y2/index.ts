@@ -5,7 +5,7 @@ export const X2Y2_TRANSFER_CONTRACT_1155 = '0x024ac22acdb367a3ae52a3d94ac6649fdc
 
 export const newX2Y2Order = async (payload: OrderPayload): Promise<boolean> => {
   const body = JSON.stringify(payload)
-  const url = `${process.env.REACT_APP_TEMP_API_URL}/nft/postX2Y2SellOrderWithApiKey`
+  const url = `${import.meta.env.REACT_APP_TEMP_API_URL}/nft/postX2Y2SellOrderWithApiKey`
   const ac = new AbortController()
   const req = new Request(url, {
     method: 'POST',
@@ -28,7 +28,9 @@ export const newX2Y2Order = async (payload: OrderPayload): Promise<boolean> => {
 }
 
 export const getX2Y2OrderId = async (collectionAddress: string, tokenId: string): Promise<number | undefined> => {
-  const url = `${process.env.REACT_APP_TEMP_API_URL}/nft/getX2Y2OrderId?collectionAddress=${collectionAddress}&tokenId=${tokenId}`
+  const url = `${
+    import.meta.env.REACT_APP_TEMP_API_URL
+  }/nft/getX2Y2OrderId?collectionAddress=${collectionAddress}&tokenId=${tokenId}`
   const r = await fetch(url, {
     method: 'GET',
     headers: {

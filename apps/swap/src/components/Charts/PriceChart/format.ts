@@ -1,5 +1,5 @@
+import { TimePeriod } from '@src/graphql/data/util'
 import { NumberValue } from 'd3'
-import { TimePeriod } from 'graphql/data/util'
 
 const HOUR_OPTIONS = { hour: 'numeric', minute: 'numeric', hour12: true } as const // e.g. '12:00 PM'
 const DAY_HOUR_OPTIONS = { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true } as const // e.g. 'Jul 4, 12:00 PM'

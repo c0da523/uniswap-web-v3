@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { Currency, Percent } from '@repo/sdk-core'
+import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import {
   InterfaceEventName,
   InterfaceModalName,
@@ -13,7 +14,6 @@ import { ChainLogo } from 'components/Logo/ChainLogo'
 import Modal, { MODAL_TRANSITION_DURATION } from 'components/Modal'
 import { RowFixed } from 'components/Row'
 import { getChainInfo } from 'constants/chainInfo'
-import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
 import { useMaxAmountIn } from 'hooks/useMaxAmountIn'
 import { Allowance, AllowanceState } from 'hooks/usePermit2Allowance'
 import usePrevious from 'hooks/usePrevious'

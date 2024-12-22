@@ -1,4 +1,4 @@
-import { usePoolData } from 'graphql/thegraph/PoolData'
+import { usePoolData } from '@src/graphql/thegraph/PoolData'
 import Router from 'react-router-dom'
 import { mocked } from 'test-utils/mocked'
 import { validParams, validPoolDataResponse } from 'test-utils/pools/fixtures'
@@ -11,8 +11,8 @@ jest.mock('react-router-dom', () => ({
   useParams: jest.fn(),
 }))
 
-jest.mock('graphql/thegraph/PoolData', () => {
-  const originalModule = jest.requireActual('graphql/thegraph/PoolData')
+jest.mock('@src/graphql/thegraph/PoolData', () => {
+  const originalModule = jest.requireActual('@src/graphql/thegraph/PoolData')
   return {
     ...originalModule,
     usePoolData: jest.fn(),

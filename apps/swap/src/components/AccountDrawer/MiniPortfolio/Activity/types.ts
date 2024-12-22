@@ -1,5 +1,5 @@
 import { ChainId, Currency } from '@repo/sdk-core'
-import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
+import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { UniswapXOrderStatus } from 'lib/hooks/orders/types'
 
 export type Activity = {

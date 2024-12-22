@@ -1,8 +1,5 @@
 import { t } from '@lingui/macro'
 import { ChainId, Currency, NONFUNGIBLE_POSITION_MANAGER_ADDRESSES, UNI_ADDRESSES } from '@repo/sdk-core'
-import UniswapXBolt from 'assets/svg/bolt.svg'
-import moonpayLogoSrc from 'assets/svg/moonpay.svg'
-import { nativeOnChain } from 'constants/tokens'
 import {
   ActivityType,
   AssetActivityPartsFragment,
@@ -16,8 +13,11 @@ import {
   TokenAssetPartsFragment,
   TokenTransferPartsFragment,
   TransactionDetailsPartsFragment,
-} from 'graphql/data/__generated__/types-and-hooks'
-import { gqlToCurrency, logSentryErrorForUnsupportedChain, supportedChainIdFromGQLChain } from 'graphql/data/util'
+} from '@src/graphql/data/__generated__/types-and-hooks'
+import { gqlToCurrency, logSentryErrorForUnsupportedChain, supportedChainIdFromGQLChain } from '@src/graphql/data/util'
+import UniswapXBolt from 'assets/svg/bolt.svg'
+import moonpayLogoSrc from 'assets/svg/moonpay.svg'
+import { nativeOnChain } from 'constants/tokens'
 import ms from 'ms'
 import { useEffect, useState } from 'react'
 import { isAddress } from 'utils'

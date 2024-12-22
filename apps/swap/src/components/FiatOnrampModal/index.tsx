@@ -80,7 +80,7 @@ export default function FiatOnrampModal() {
     setLoading(true)
     setError(null)
     try {
-      const signedIframeUrlFetchEndpoint = process.env.REACT_APP_MOONPAY_LINK as string
+      const signedIframeUrlFetchEndpoint = import.meta.env.REACT_APP_MOONPAY_LINK as string
       const res = await fetch(signedIframeUrlFetchEndpoint, {
         headers: {
           Accept: 'application/json',

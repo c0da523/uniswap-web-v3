@@ -1,4 +1,4 @@
-import { TokenBalance, TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
+import { TokenBalance, TokenStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 
 const HIDE_SMALL_USD_BALANCES_THRESHOLD = 1
 

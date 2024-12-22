@@ -1,4 +1,4 @@
-import { NftStandard } from 'graphql/data/__generated__/types-and-hooks'
+import { NftStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 import { BagItem, BagItemStatus, BagStatus, UpdatedGenieAsset } from 'nft/types'
 import { v4 as uuidv4 } from 'uuid'
 import { devtools } from 'zustand/middleware'

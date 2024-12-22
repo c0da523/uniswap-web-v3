@@ -1,7 +1,7 @@
 import { QueryResult } from '@apollo/client'
+import { Chain, Exact, TokenProjectQuery, useTokenProjectQuery } from '@src/graphql/data/__generated__/types-and-hooks'
 import userEvent from '@testing-library/user-event'
 import { USDC_MAINNET } from 'constants/tokens'
-import { Chain, Exact, TokenProjectQuery, useTokenProjectQuery } from 'graphql/data/__generated__/types-and-hooks'
 import { useCurrency } from 'hooks/Tokens'
 import { mocked } from 'test-utils/mocked'
 import { validTokenProjectResponse, validUSDCCurrency } from 'test-utils/pools/fixtures'
@@ -9,8 +9,8 @@ import { act, render, screen } from 'test-utils/render'
 
 import { TokenDescription } from './TokenDescription'
 
-jest.mock('graphql/data/__generated__/types-and-hooks', () => {
-  const originalModule = jest.requireActual('graphql/data/__generated__/types-and-hooks')
+jest.mock('@src/graphql/data/__generated__/types-and-hooks', () => {
+  const originalModule = jest.requireActual('@src/graphql/data/__generated__/types-and-hooks')
   return {
     ...originalModule,
     useTokenProjectQuery: jest.fn(),

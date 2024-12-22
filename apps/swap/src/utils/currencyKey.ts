@@ -1,8 +1,8 @@
 import { ChainId, Currency } from '@repo/sdk-core'
+import { TokenStandard } from '@src/graphql/data/__generated__/types-and-hooks'
+import { Chain } from '@src/graphql/data/Token'
+import { supportedChainIdFromGQLChain } from '@src/graphql/data/util'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
-import { TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
-import { Chain } from 'graphql/data/Token'
-import { supportedChainIdFromGQLChain } from 'graphql/data/util'
 
 export type CurrencyKey = string
 

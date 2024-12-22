@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { beforeSend } from './errors'
 
 // Dump some metadata into the window to allow client verification.
-window.GIT_COMMIT_HASH = process.env.REACT_APP_GIT_COMMIT_HASH
+window.GIT_COMMIT_HASH = import.meta.env.REACT_APP_GIT_COMMIT_HASH
 
 // This is used to identify the user in Sentry.
 const SENTRY_USER_ID_KEY = 'sentry-user-id'
@@ -21,11 +21,11 @@ const AMPLITUDE_DUMMY_KEY = '00000000000000000000000000000000'
 export const STATSIG_DUMMY_KEY = 'client-0000000000000000000000000000000000000000000'
 
 Sentry.init({
-  dsn: process.env.REACT_APP_SENTRY_DSN,
-  release: process.env.REACT_APP_GIT_COMMIT_HASH,
+  dsn: import.meta.env.REACT_APP_SENTRY_DSN,
+  release: import.meta.env.REACT_APP_GIT_COMMIT_HASH,
   environment: getEnvName(),
   enabled: isSentryEnabled(),
-  tracesSampleRate: Number(process.env.REACT_APP_SENTRY_TRACES_SAMPLE_RATE ?? 0),
+  tracesSampleRate: Number(import.meta.env.REACT_APP_SENTRY_TRACES_SAMPLE_RATE ?? 0),
   integrations: [
     new BrowserTracing({
       startTransactionOnLocationChange: false,
@@ -42,9 +42,9 @@ if (!sentryUserId) {
 Sentry.setUser({ id: sentryUserId })
 
 initializeAnalytics(AMPLITUDE_DUMMY_KEY, OriginApplication.INTERFACE, {
-  proxyUrl: process.env.REACT_APP_AMPLITUDE_PROXY_URL,
+  proxyUrl: import.meta.env.REACT_APP_AMPLITUDE_PROXY_URL,
   defaultEventName: SharedEventName.PAGE_VIEWED,
-  commitHash: process.env.REACT_APP_GIT_COMMIT_HASH,
+  commitHash: import.meta.env.REACT_APP_GIT_COMMIT_HASH,
   isProductionEnv: isProductionEnv(),
   debug: isDevelopmentEnv(),
   reportOriginCountry: (country: string) => store.dispatch(setOriginCountry(country)),

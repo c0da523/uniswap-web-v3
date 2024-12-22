@@ -1,5 +1,5 @@
+import { PricePoint, TimePeriod } from '@src/graphql/data/util'
 import { bisector, ScaleLinear, timeDay, timeHour, TimeInterval, timeMinute, timeMonth } from 'd3'
-import { PricePoint, TimePeriod } from 'graphql/data/util'
 
 /**
  * Returns the minimum and maximum values in the given array of PricePoints.

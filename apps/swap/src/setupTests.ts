@@ -2,15 +2,14 @@ import '@testing-library/jest-dom' // jest custom assertions
 import '@vanilla-extract/css/disableRuntimeStyles' // https://vanilla-extract.style/documentation/test-environments/#disabling-runtime-styles
 import 'polyfills'
 import 'jest-styled-components' // adds style diffs to snapshot tests
-import 'polyfills'
 
 import type { createPopper } from '@popperjs/core'
+import { toBeVisible } from '@src/test-utils/matchers'
+import { mocked } from '@src/test-utils/mocked'
 import { useWeb3React } from '@web3-react/core'
 import failOnConsole from 'jest-fail-on-console'
 import { disableNetConnect, restore as restoreNetConnect } from 'nock'
 import { Readable } from 'stream'
-import { toBeVisible } from 'test-utils/matchers'
-import { mocked } from 'test-utils/mocked'
 import { TextDecoder, TextEncoder } from 'util'
 
 window.open = jest.fn()

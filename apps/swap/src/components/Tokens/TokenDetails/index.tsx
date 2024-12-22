@@ -1,4 +1,12 @@
 import { Trans } from '@lingui/macro'
+import { TokenPriceQuery } from '@src/graphql/data/__generated__/types-and-hooks'
+import { Chain, TokenQuery, TokenQueryData } from '@src/graphql/data/Token'
+import {
+  getTokenDetailsURL,
+  gqlToCurrency,
+  InterfaceGqlChain,
+  supportedChainIdFromGQLChain,
+} from '@src/graphql/data/util'
 import { InterfacePageName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import { Trace } from 'analytics'
@@ -25,9 +33,6 @@ import { NATIVE_CHAIN_ID, nativeOnChain } from 'constants/tokens'
 import { checkWarning } from 'constants/tokenSafety'
 import { useInfoExplorePageEnabled } from 'featureFlags/flags/infoExplore'
 import { useInfoTDPEnabled } from 'featureFlags/flags/infoTDP'
-import { TokenPriceQuery } from 'graphql/data/__generated__/types-and-hooks'
-import { Chain, TokenQuery, TokenQueryData } from 'graphql/data/Token'
-import { getTokenDetailsURL, gqlToCurrency, InterfaceGqlChain, supportedChainIdFromGQLChain } from 'graphql/data/util'
 import { useOnGlobalChainSwitch } from 'hooks/useGlobalChainSwitch'
 import { UNKNOWN_TOKEN_SYMBOL, useTokenFromActiveNetwork } from 'lib/hooks/useCurrency'
 import { Swap } from 'pages/Swap'

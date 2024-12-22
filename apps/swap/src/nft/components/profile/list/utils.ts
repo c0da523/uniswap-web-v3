@@ -1,6 +1,6 @@
 import type { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { addressesByNetwork, SupportedChainId } from '@looksrare/sdk'
-import { NftStandard } from 'graphql/data/__generated__/types-and-hooks'
+import { NftStandard } from '@src/graphql/data/__generated__/types-and-hooks'
 import ms from 'ms'
 import { SetPriceMethod, WarningType } from 'nft/components/profile/list/shared'
 import { useNFTList, useSellAsset } from 'nft/hooks'

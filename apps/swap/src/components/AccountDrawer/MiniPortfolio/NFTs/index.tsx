@@ -1,4 +1,4 @@
-import { useNftBalance } from 'graphql/data/nft/NftBalance'
+import { useNftBalance } from '@src/graphql/data/nft/NftBalance'
 import { LoadingAssets } from 'nft/components/collection/CollectionAssetLoading'
 import { EmptyWalletModule } from 'nft/components/profile/view/EmptyWalletContent'
 import { useState } from 'react'

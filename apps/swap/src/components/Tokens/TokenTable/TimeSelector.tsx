@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
+import { TimePeriod } from '@src/graphql/data/util'
 import { useInfoExplorePageEnabled } from 'featureFlags/flags/infoExplore'
-import { TimePeriod } from 'graphql/data/util'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import { useAtom } from 'jotai'
 import { useRef } from 'react'

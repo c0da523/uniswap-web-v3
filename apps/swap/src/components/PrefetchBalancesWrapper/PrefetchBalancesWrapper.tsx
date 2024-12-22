@@ -1,6 +1,9 @@
+import {
+  usePortfolioBalancesLazyQuery,
+  usePortfolioBalancesQuery,
+} from '@src/graphql/data/__generated__/types-and-hooks'
+import { GQL_MAINNET_CHAINS } from '@src/graphql/data/util'
 import { useWeb3React } from '@web3-react/core'
-import { usePortfolioBalancesLazyQuery, usePortfolioBalancesQuery } from 'graphql/data/__generated__/types-and-hooks'
-import { GQL_MAINNET_CHAINS } from 'graphql/data/util'
 import usePrevious from 'hooks/usePrevious'
 import { atom, useAtom } from 'jotai'
 import { PropsWithChildren, useCallback, useEffect } from 'react'

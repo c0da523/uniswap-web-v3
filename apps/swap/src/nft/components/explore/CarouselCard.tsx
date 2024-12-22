@@ -1,6 +1,6 @@
+import { useCollection } from '@src/graphql/data/nft/Collection'
 import { loadingAnimation } from 'components/Loader/styled'
 import { LoadingBubble } from 'components/Tokens/loading'
-import { useCollection } from 'graphql/data/nft/Collection'
 import { UniswapMagentaIcon, VerifiedIcon } from 'nft/components/icons'
 import { Markets, TrendingCollection } from 'nft/types'
 import styled from 'styled-components'

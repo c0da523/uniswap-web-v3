@@ -1,4 +1,4 @@
-import { useNftBalance } from 'graphql/data/nft/NftBalance'
+import { useNftBalance } from '@src/graphql/data/nft/NftBalance'
 import { AnimatedBox, Box } from 'nft/components/Box'
 import { LoadingAssets } from 'nft/components/collection/CollectionAssetLoading'
 import { assetList } from 'nft/components/collection/CollectionNfts.css'

@@ -1,4 +1,4 @@
-import { NftMarketplace, NftTradeInput, TokenAmountInput } from 'graphql/data/__generated__/types-and-hooks'
+import { NftMarketplace, NftTradeInput, TokenAmountInput } from '@src/graphql/data/__generated__/types-and-hooks'
 import { BagItem, BagItemStatus, UpdatedGenieAsset } from 'nft/types'
 
 export const buildNftTradeInputFromBagItems = (itemsInBag: BagItem[]): NftTradeInput[] => {

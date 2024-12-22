@@ -1,14 +1,14 @@
 import { ChainId } from '@repo/sdk-core'
 
-const INFURA_KEY = process.env.REACT_APP_INFURA_KEY
+const INFURA_KEY = import.meta.env.REACT_APP_INFURA_KEY
 if (typeof INFURA_KEY === 'undefined') {
   throw new Error(`REACT_APP_INFURA_KEY must be a defined environment variable`)
 }
-const QUICKNODE_MAINNET_RPC_URL = process.env.REACT_APP_QUICKNODE_MAINNET_RPC_URL
+const QUICKNODE_MAINNET_RPC_URL = import.meta.env.REACT_APP_QUICKNODE_MAINNET_RPC_URL
 if (typeof QUICKNODE_MAINNET_RPC_URL === 'undefined') {
   throw new Error(`REACT_APP_QUICKNODE_MAINNET_RPC_URL must be a defined environment variable`)
 }
-const QUICKNODE_BNB_RPC_URL = process.env.REACT_APP_BNB_RPC_URL
+const QUICKNODE_BNB_RPC_URL = import.meta.env.REACT_APP_BNB_RPC_URL
 if (typeof QUICKNODE_BNB_RPC_URL === 'undefined') {
   throw new Error(`REACT_APP_BNB_RPC_URL must be a defined environment variable`)
 }

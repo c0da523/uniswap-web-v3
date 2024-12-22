@@ -1,7 +1,7 @@
+import { SparklineMap, TopToken } from '@src/graphql/data/TopTokens'
+import { PricePoint } from '@src/graphql/data/util'
 import { SparkLineLoadingBubble } from 'components/Tokens/TokenTable/TokenRow'
 import { curveCardinal, scaleLinear } from 'd3'
-import { SparklineMap, TopToken } from 'graphql/data/TopTokens'
-import { PricePoint } from 'graphql/data/util'
 import { memo } from 'react'
 import styled, { useTheme } from 'styled-components'
 

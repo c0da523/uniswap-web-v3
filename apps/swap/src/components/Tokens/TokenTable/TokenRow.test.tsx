@@ -1,6 +1,6 @@
 import { ChainId } from '@repo/sdk-core'
-import { Currency, TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
-import { CHAIN_ID_TO_BACKEND_NAME } from 'graphql/data/util'
+import { Currency, TokenStandard } from '@src/graphql/data/__generated__/types-and-hooks'
+import { CHAIN_ID_TO_BACKEND_NAME } from '@src/graphql/data/util'
 import { render, screen } from 'test-utils/render'
 
 import { LoadedRow } from './TokenRow'

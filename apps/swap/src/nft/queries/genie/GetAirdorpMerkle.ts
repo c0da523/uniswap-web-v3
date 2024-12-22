@@ -5,7 +5,7 @@ interface CollectionrRewardsResponse {
 }
 
 export const CollectionRewardsFetcher = async (address: string): Promise<CollectionrRewardsResponse> => {
-  const url = `${process.env.REACT_APP_TEMP_API_URL}/nft/rewards/${address}?category=GENIE_UNISWAP_USDC_AIRDROP`
+  const url = `${import.meta.env.REACT_APP_TEMP_API_URL}/nft/rewards/${address}?category=GENIE_UNISWAP_USDC_AIRDROP`
 
   const controller = new AbortController()
 

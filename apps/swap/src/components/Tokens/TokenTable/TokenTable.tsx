@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { PAGE_SIZE, useTopTokens } from 'graphql/data/TopTokens'
-import { validateUrlChainParam } from 'graphql/data/util'
+import { PAGE_SIZE, useTopTokens } from '@src/graphql/data/TopTokens'
+import { validateUrlChainParam } from '@src/graphql/data/util'
 import { ReactNode } from 'react'
 import { AlertTriangle } from 'react-feather'
 import { useParams } from 'react-router-dom'

@@ -1,5 +1,7 @@
 import { formatEther as ethersFormatEther } from '@ethersproject/units'
 import { Currency, CurrencyAmount, Percent, Price, Token } from '@repo/sdk-core'
+import { Currency as GqlCurrency } from '@src/graphql/data/__generated__/types-and-hooks'
+import { useLocalCurrencyConversionRate } from '@src/graphql/data/ConversionRate'
 import {
   DEFAULT_LOCAL_CURRENCY,
   LOCAL_CURRENCY_SYMBOL_DISPLAY_TYPE,
@@ -7,8 +9,6 @@ import {
 } from 'constants/localCurrencies'
 import { DEFAULT_LOCALE, SupportedLocale } from 'constants/locales'
 import { useCurrencyConversionFlagEnabled } from 'featureFlags/flags/currencyConversion'
-import { Currency as GqlCurrency } from 'graphql/data/__generated__/types-and-hooks'
-import { useLocalCurrencyConversionRate } from 'graphql/data/ConversionRate'
 import { useActiveLocalCurrency } from 'hooks/useActiveLocalCurrency'
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import usePrevious from 'hooks/usePrevious'
