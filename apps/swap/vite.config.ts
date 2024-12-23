@@ -1,15 +1,15 @@
-// import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
-// import react from '@vitejs/plugin-react-swc'
 import { lingui } from '@lingui/vite-plugin'
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
+import rollupNodePolyFill from 'rollup-plugin-polyfill-node'
 import { defineConfig } from 'vite'
 import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    // vanillaExtractPlugin(), // CSS-in-TypeScript 的解决方案
+    vanillaExtractPlugin(),
     react({
       babel: {
         plugins: ['babel-plugin-macros'],
@@ -52,7 +52,12 @@ export default defineConfig({
     },
   },
   build: {
-    rollupOptions: {},
+    rollupOptions: {
+      plugins: [
+        // Enable rollup polyfills plugin used during production bundling
+        rollupNodePolyFill(),
+      ],
+    },
   },
   optimizeDeps: {
     esbuildOptions: {
@@ -67,9 +72,9 @@ export default defineConfig({
       localsConvention: 'camelCaseOnly',
     },
   },
-  worker: {
-    format: 'es',
-  },
+  // worker: {
+  //   format: 'es',
+  // },
   assetsInclude: ['**/*.woff', '**/*.woff2'],
   server: {
     port: 3000,

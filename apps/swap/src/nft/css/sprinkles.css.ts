@@ -47,6 +47,43 @@ export type Theme = typeof themeContractValues
 
 export const themeVars = createGlobalThemeContract(themeContractValues, (_, path) => `genie-${path.join('-')}`)
 
+// Initialize the theme values
+createGlobalTheme(':root', themeVars, {
+  colors: {
+    neutral1: '#FFFFFF',
+    neutral2: '#9B9B9B',
+    neutral3: '#5E5E5E',
+    surface1: '#131313',
+    surface2: '#1B1B1B',
+    surface3: '#FFFFFF1f',
+    surface4: '#FFFFFF33',
+    surface5: '#00000004',
+    accent1: '#FC72FF',
+    accent2: '#311C31',
+    success: '#40B66B',
+    critical: '#FF5F52',
+    scrim: 'rgba(0, 0, 0, 0.6)',
+    white: '#FFFFFF',
+    deprecated_accentFailureSoft: '#FF6871',
+    deprecated_gold: '#EEB317',
+    deprecated_violet: '#7A7BEB',
+    deprecated_modalBackdrop: 'rgba(0, 0, 0, 0.3)',
+    deprecated_stateOverlayHover: 'rgba(153, 161, 189, 0.08)',
+    dropShadow: 'rgba(0, 0, 0, 0.1)',
+  },
+  shadows: {
+    menu: '0px 10px 30px rgba(0, 0, 0, 0.1)',
+    elevation: '0px 4px 16px rgba(0, 0, 0, 0.04)',
+    tooltip: '0px 4px 16px rgba(0, 0, 0, 0.1)',
+    deep: '8px 12px 20px rgba(51, 53, 72, 0.04), 4px 6px 12px rgba(51, 53, 72, 0.02), 4px 4px 8px rgba(51, 53, 72, 0.04)',
+    shallow: '4px 4px 10px rgba(0, 0, 0, 0.24)',
+  },
+  opacity: {
+    hover: '0.6',
+    pressed: '0.4',
+  },
+})
+
 export const navDimensions = {
   height: 72,
   verticalPad: 20,

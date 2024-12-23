@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { flexColumnNoWrap } from 'theme/styles'
 
-import sockImg from '../../assets/svg/socks.svg'
+import sockImg from '../../assets/svg/socks.svg?url'
 import { useHasSocks } from '../../hooks/useSocksBalance'
 import Identicon from '../Identicon'
 

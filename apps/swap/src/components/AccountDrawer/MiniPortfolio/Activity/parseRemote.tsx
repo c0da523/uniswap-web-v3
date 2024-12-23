@@ -15,8 +15,8 @@ import {
   TransactionDetailsPartsFragment,
 } from '@src/graphql/data/__generated__/types-and-hooks'
 import { gqlToCurrency, logSentryErrorForUnsupportedChain, supportedChainIdFromGQLChain } from '@src/graphql/data/util'
-import UniswapXBolt from 'assets/svg/bolt.svg'
-import moonpayLogoSrc from 'assets/svg/moonpay.svg'
+import UniswapXBolt from 'assets/svg/bolt.svg?url'
+import moonpayLogoSrc from 'assets/svg/moonpay.svg?url'
 import { nativeOnChain } from 'constants/tokens'
 import ms from 'ms'
 import { useEffect, useState } from 'react'

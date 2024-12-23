@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { ChainId, Currency } from '@repo/sdk-core'
 import { chainIdToBackendName } from '@src/graphql/data/util'
-import blankTokenUrl from 'assets/svg/blank_token.svg'
+import blankTokenUrl from 'assets/svg/blank_token.svg?url'
 import Column from 'components/Column'
 import { ChainLogo } from 'components/Logo/ChainLogo'
 import Row from 'components/Row'

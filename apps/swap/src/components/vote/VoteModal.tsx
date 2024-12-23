@@ -7,7 +7,7 @@ import { CustomLightSpinner, ThemedText } from 'theme/components'
 import { ExternalLink } from 'theme/components'
 import { formatCurrencyAmount } from 'utils/formatCurrencyAmount'
 
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/blue-loader.svg?url'
 import { useUserVotes, useVoteCallback } from '../../state/governance/hooks'
 import { VoteOption } from '../../state/governance/types'
 import { ExplorerDataType, getExplorerLink } from '../../utils/getExplorerLink'

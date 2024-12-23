@@ -151,7 +151,7 @@ export const NFTListRow = ({
       </RemoveIconContainer>
 
       <NFTInfoWrapper>
-        <NFTImage alt={asset.name} src={asset.imageUrl || '/nft/svgs/image-placeholder.svg'} />
+        <NFTImage alt={asset.name} src={asset.imageUrl || '/nft/svgs/image-placeholder.svg?url'} />
         <TokenInfoWrapper>
           <TokenName>{asset.name ? asset.name : `#${asset.tokenId}`}</TokenName>
           <CollectionName>

@@ -1,5 +1,5 @@
 import { ChainId, Currency } from '@repo/sdk-core'
-import blankTokenUrl from 'assets/svg/blank_token.svg'
+import blankTokenUrl from 'assets/svg/blank_token.svg?url'
 import UnknownStatus from 'assets/svg/contract-interaction.svg?component'
 import { MissingImageLogo } from 'components/Logo/AssetLogo'
 import { ChainLogo, getDefaultBorderRadius } from 'components/Logo/ChainLogo'

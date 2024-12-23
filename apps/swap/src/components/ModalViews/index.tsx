@@ -4,7 +4,7 @@ import { ArrowUpCircle } from 'react-feather'
 import styled, { useTheme } from 'styled-components'
 import { CloseIcon, CustomLightSpinner, ThemedText } from 'theme/components'
 
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/blue-loader.svg?url'
 import { ExternalLink } from '../../theme/components'
 import { ExplorerDataType, getExplorerLink } from '../../utils/getExplorerLink'
 import { AutoColumn, ColumnCenter } from '../Column'

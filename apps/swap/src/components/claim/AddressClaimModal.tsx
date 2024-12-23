@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import { CloseIcon, CustomLightSpinner, ExternalLink, ThemedText, UniTokenAnimated } from 'theme/components'
 import { shortenAddress } from 'utils'
 
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/blue-loader.svg?url'
 import tokenLogo from '../../assets/images/token-logo.png'
 import useENS from '../../hooks/useENS'
 import { useClaimCallback, useUserHasAvailableClaim, useUserUnclaimedAmount } from '../../state/claim/hooks'

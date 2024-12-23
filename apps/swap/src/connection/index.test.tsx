@@ -1,5 +1,5 @@
-import INJECTED_DARK_ICON from 'assets/wallets/browser-wallet-dark.svg'
-import INJECTED_LIGHT_ICON from 'assets/wallets/browser-wallet-light.svg'
+import INJECTED_DARK_ICON from 'assets/wallets/browser-wallet-dark.svg?url'
+import INJECTED_LIGHT_ICON from 'assets/wallets/browser-wallet-light.svg?url'
 import { connections, getConnection } from 'connection'
 
 import { ConnectionType } from './types'

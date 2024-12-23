@@ -1,4 +1,4 @@
-import searchIcon from 'assets/svg/search.svg'
+import searchIcon from 'assets/svg/search.svg?url'
 import { LoadingRows as BaseLoadingRows } from 'components/Loader/styled'
 import styled from 'styled-components'
 

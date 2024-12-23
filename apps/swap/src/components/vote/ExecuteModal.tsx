@@ -6,7 +6,7 @@ import styled, { useTheme } from 'styled-components'
 import { CustomLightSpinner, ThemedText } from 'theme/components'
 import { ExternalLink } from 'theme/components'
 
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/images/blue-loader.svg?url'
 import { useExecuteCallback } from '../../state/governance/hooks'
 import { ExplorerDataType, getExplorerLink } from '../../utils/getExplorerLink'
 import { ButtonPrimary } from '../Button'

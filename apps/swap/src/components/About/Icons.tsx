@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import DiscordI from './images/discord.svg?component'
 import GithubI from './images/github.svg?component'
 import TwitterI from './images/twitter-safe.svg?component'
 
