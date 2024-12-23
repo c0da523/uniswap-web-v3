@@ -17,6 +17,7 @@ export const START_BLOCKS: { [key: number]: number } = {
   [ChainId.BNB]: 26324014,
   [ChainId.AVALANCHE]: 31422450,
   [ChainId.BASE]: 1371680,
+  [ChainId.EXP_CHAIN_TESTNET]: 100971,
 }
 
 export enum NetworkType {
@@ -222,6 +223,18 @@ const CHAIN_INFO: ChainInfoMap = {
     label: 'Base',
     statusPage: 'https://status.base.org/',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    color: darkTheme.chain_84531,
+  },
+  [ChainId.EXP_CHAIN_TESTNET]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: '',
+    defaultListUrl: BASE_LIST,
+    docs: 'https://docs.polyhedra.network',
+    explorer: 'https://blockscout-testnet.expchain.ai/',
+    infoLink: '',
+    label: 'EXPchain',
+    nativeCurrency: { name: 'ZKJ', symbol: 'tZKJ', decimals: 18 },
     color: darkTheme.chain_84531,
   },
 } as const

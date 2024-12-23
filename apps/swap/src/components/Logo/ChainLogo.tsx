@@ -12,6 +12,7 @@ import bnb from './ChainSymbols/bnb.svg?component'
 import celo from './ChainSymbols/celo.svg?component'
 import celoLight from './ChainSymbols/celo_light.svg?component'
 import ethereum from './ChainSymbols/ethereum.svg?component'
+import exp from './ChainSymbols/exp.svg?component'
 import optimism from './ChainSymbols/optimism.svg?component'
 import polygon from './ChainSymbols/polygon.svg?component'
 
@@ -78,6 +79,12 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
     case ChainId.BASE:
       return {
         Symbol: base,
+        bgColor: '#0052FF33',
+        textColor: '#0052FF',
+      }
+    case ChainId.EXP_CHAIN_TESTNET:
+      return {
+        Symbol: exp,
         bgColor: '#0052FF33',
         textColor: '#0052FF',
       }

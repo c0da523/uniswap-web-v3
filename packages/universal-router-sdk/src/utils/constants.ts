@@ -105,6 +105,13 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4200000000000000000000000000000000000006',
     creationBlock: 3229053,
   },
+  // exp chain testnet
+  // todo 修改
+  [18880]: {
+    router: '0x88a52739DA07a1eC714650522f96fd87d589b235',
+    weth: '0x0000000000000000000000000000000000000000',
+    creationBlock: 18880,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
