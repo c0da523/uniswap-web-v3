@@ -1,6 +1,6 @@
 import { t, Trans } from '@lingui/macro'
 import { CurrencyAmount, TradeType } from '@repo/sdk-core'
-import { ReactComponent as ErrorContent } from 'assets/svg/uniswapx_error.svg'
+import ErrorContent from 'assets/svg/uniswapx_error.svg?component'
 import Column, { AutoColumn } from 'components/Column'
 import { OpacityHoverState } from 'components/Common'
 import { LoaderV3 } from 'components/Icons/LoadingSpinner'

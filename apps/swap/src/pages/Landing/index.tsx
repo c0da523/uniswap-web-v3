@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, InterfacePageName, SharedEventName } from '@uniswap/analytics-events'
 import { Trace, TraceEvent } from 'analytics'
-import { ReactComponent as UniswapAppLogo } from 'assets/svg/uniswap_app_logo.svg'
+import UniswapAppLogo from 'assets/svg/uniswap_app_logo.svg?component'
 import { AboutFooter } from 'components/About/AboutFooter'
 import Card, { CardType } from 'components/About/Card'
 import { MAIN_CARDS, MORE_CARDS } from 'components/About/constants'

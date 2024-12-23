@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@repo/sdk-core'
 import { Protocol } from '@repo/router-sdk'
+import { Currency } from '@repo/sdk-core'
 import { FeeAmount } from '@repo/v3-sdk'
 import Badge from 'components/Badge'
 import DoubleCurrencyLogo from 'components/DoubleLogo'
@@ -14,7 +14,7 @@ import { ThemedText } from 'theme/components'
 import { Z_INDEX } from 'theme/zIndex'
 import { RoutingDiagramEntry } from 'utils/getRoutingDiagramEntries'
 
-import { ReactComponent as DotLine } from '../../assets/svg/dot_line.svg'
+import DotLine from '../../assets/svg/dot_line.svg?component'
 import { MouseoverTooltip, TooltipSize } from '../Tooltip'
 
 const Wrapper = styled(Box)`

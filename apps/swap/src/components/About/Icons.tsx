@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-import { ReactComponent as DiscordI } from './images/discord.svg'
-import { ReactComponent as GithubI } from './images/github.svg'
-import { ReactComponent as TwitterI } from './images/twitter-safe.svg'
+import GithubI from './images/github.svg?component'
+import TwitterI from './images/twitter-safe.svg?component'
 
 export const DiscordIcon = styled(DiscordI)<{ size?: number; fill?: string }>`
   height: ${({ size }) => (size ? size + 'px' : '32px')};

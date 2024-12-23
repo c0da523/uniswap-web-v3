@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom'
 import styled, { css, keyframes } from 'styled-components'
 import { Z_INDEX } from 'theme/zIndex'
 
-import { ReactComponent as TooltipTriangle } from '../../assets/svg/tooltip_triangle.svg'
+import TooltipTriangle from '../../assets/svg/tooltip_triangle.svg'
 import { anonymizeLink } from '../../utils/anonymizeLink'
 
 // TODO: Break this file into a components folder

@@ -1,6 +1,6 @@
 import { ChainId, Currency } from '@repo/sdk-core'
 import blankTokenUrl from 'assets/svg/blank_token.svg'
-import { ReactComponent as UnknownStatus } from 'assets/svg/contract-interaction.svg'
+import UnknownStatus from 'assets/svg/contract-interaction.svg?component'
 import { MissingImageLogo } from 'components/Logo/AssetLogo'
 import { ChainLogo, getDefaultBorderRadius } from 'components/Logo/ChainLogo'
 import { Unicon } from 'components/Unicon'

@@ -270,7 +270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.9, @babel/core@npm:^7.26.0, @babel/core@npm:^7.4.4, @babel/core@npm:^7.7.5":
+"@babel/core@npm:^7.21.3, @babel/core@npm:^7.23.9, @babel/core@npm:^7.26.0, @babel/core@npm:^7.4.4, @babel/core@npm:^7.7.5":
   version: 7.26.0
   resolution: "@babel/core@npm:7.26.0"
   dependencies:
@@ -712,7 +712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.11.5, @babel/parser@npm:^7.23.9, @babel/parser@npm:^7.25.9, @babel/parser@npm:^7.26.0, @babel/parser@npm:^7.26.3, @babel/parser@npm:^7.7.0":
+"@babel/parser@npm:^7.11.5, @babel/parser@npm:^7.22.0, @babel/parser@npm:^7.23.9, @babel/parser@npm:^7.25.9, @babel/parser@npm:^7.26.0, @babel/parser@npm:^7.26.3, @babel/parser@npm:^7.7.0":
   version: 7.26.3
   resolution: "@babel/parser@npm:7.26.3"
   dependencies:
@@ -1913,7 +1913,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.25.9, @babel/types@npm:^7.26.0, @babel/types@npm:^7.26.3, @babel/types@npm:^7.7.0, @babel/types@npm:^7.8.3":
+"@babel/types@npm:^7.21.3, @babel/types@npm:^7.25.9, @babel/types@npm:^7.26.0, @babel/types@npm:^7.26.3, @babel/types@npm:^7.7.0, @babel/types@npm:^7.8.3":
   version: 7.26.3
   resolution: "@babel/types@npm:7.26.3"
   dependencies:
@@ -5521,10 +5521,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lingui/babel-plugin-extract-messages@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/babel-plugin-extract-messages@npm:4.14.1"
+  checksum: 62bdc92b544c024d72628d4b6cb46ca1686606a4cdbd66758681fe93563705ad799d1fb42541c814dfe39166c519384bba65c2a5731f2ef7217f11e3680a5986
+  languageName: node
+  linkType: hard
+
 "@lingui/babel-plugin-extract-messages@npm:4.3.0":
   version: 4.3.0
   resolution: "@lingui/babel-plugin-extract-messages@npm:4.3.0"
   checksum: f1d2b43d6f8e542f837230a3f7b22733beca1641cda3572dc260e40acd3d98143817fc53144382121780a67568b404c175d2c5c61e1b0f2f95b1e1a438228f33
+  languageName: node
+  linkType: hard
+
+"@lingui/cli@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/cli@npm:4.14.1"
+  dependencies:
+    "@babel/core": ^7.21.0
+    "@babel/generator": ^7.21.1
+    "@babel/parser": ^7.22.0
+    "@babel/runtime": ^7.21.0
+    "@babel/types": ^7.21.2
+    "@lingui/babel-plugin-extract-messages": 4.14.1
+    "@lingui/conf": 4.14.1
+    "@lingui/core": 4.14.1
+    "@lingui/format-po": 4.14.1
+    "@lingui/message-utils": 4.14.1
+    babel-plugin-macros: ^3.0.1
+    chalk: ^4.1.0
+    chokidar: 3.5.1
+    cli-table: ^0.3.11
+    commander: ^10.0.0
+    convert-source-map: ^2.0.0
+    date-fns: ^3.6.0
+    esbuild: ^0.17.10
+    glob: ^7.1.4
+    inquirer: ^7.3.3
+    micromatch: ^4.0.2
+    normalize-path: ^3.0.0
+    ora: ^5.1.0
+    pathe: ^1.1.0
+    pkg-up: ^3.1.0
+    pofile: ^1.1.4
+    pseudolocale: ^2.0.0
+    ramda: ^0.27.1
+    source-map: ^0.8.0-beta.0
+  bin:
+    lingui: dist/lingui.js
+  checksum: 504864447ad114d81fe27ab9c8675020e8ef637f2b2329a7e154c6f47139ace806b3e4b4efc872f352a0dbb9a5784d7b4eae89bd05aa19d8a1ebcf52eef0d1fa
   languageName: node
   linkType: hard
 
@@ -5567,6 +5613,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lingui/conf@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/conf@npm:4.14.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    chalk: ^4.1.0
+    cosmiconfig: ^8.0.0
+    jest-validate: ^29.4.3
+    jiti: ^1.17.1
+    lodash.get: ^4.4.2
+  checksum: 6108724647a85c2114fb5bd3212de16f56f1495bf94fffa3fb944a1187e7e30df63947628534bc9880483e3b290761287e317ec48d3c12fe90d654332d199b78
+  languageName: node
+  linkType: hard
+
 "@lingui/conf@npm:4.3.0":
   version: 4.3.0
   resolution: "@lingui/conf@npm:4.3.0"
@@ -5581,6 +5641,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lingui/core@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/core@npm:4.14.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@lingui/message-utils": 4.14.1
+    unraw: ^3.0.0
+  checksum: 6bf82be81a84a7e5a34a5a7a3d9d503b4eca6d310655a306549e575a50aae3c6e6964022ab98229c7cbeef45ab368d5c6bc6a713abefc367f1f16b1d80e9d226
+  languageName: node
+  linkType: hard
+
 "@lingui/core@npm:4.3.0, @lingui/core@npm:^4.3.0":
   version: 4.3.0
   resolution: "@lingui/core@npm:4.3.0"
@@ -5589,6 +5660,18 @@ __metadata:
     "@lingui/message-utils": 4.3.0
     unraw: ^2.0.1
   checksum: 357782bab503c11b5666578da0e2ac136444b3683a7068850e1587d9e66952221009a3acfdb519f36886ecfb321720e49c2d49c2ed5512fc4f72af6015fcc01d
+  languageName: node
+  linkType: hard
+
+"@lingui/format-po@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/format-po@npm:4.14.1"
+  dependencies:
+    "@lingui/conf": 4.14.1
+    "@lingui/message-utils": 4.14.1
+    date-fns: ^3.6.0
+    pofile: ^1.1.4
+  checksum: 1f8392b281b6fa9e7509c163d33530178b207d7f3be6317f0bac7b67115baa46c2d31b67d6c7c64ddf542f0015ec2ed4efee782e0413cf0948676d1f9a1b6437
   languageName: node
   linkType: hard
 
@@ -5620,6 +5703,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lingui/message-utils@npm:4.14.1":
+  version: 4.14.1
+  resolution: "@lingui/message-utils@npm:4.14.1"
+  dependencies:
+    "@messageformat/parser": ^5.0.0
+    js-sha256: ^0.10.1
+  checksum: 1b699891b3e62e54cdf69fcdedb5c9c7bbe15e02798f44b617d999a3e15a85b38f49d43d47b335e983c85335b50fc2d220d562b1fd0c241608875241d13006ec
+  languageName: node
+  linkType: hard
+
 "@lingui/message-utils@npm:4.3.0":
   version: 4.3.0
   resolution: "@lingui/message-utils@npm:4.3.0"
@@ -5641,17 +5734,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lingui/swc-plugin@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "@lingui/swc-plugin@npm:4.0.4"
+"@lingui/vite-plugin@npm:^4.0.4":
+  version: 4.14.1
+  resolution: "@lingui/vite-plugin@npm:4.14.1"
+  dependencies:
+    "@lingui/cli": 4.14.1
+    "@lingui/conf": 4.14.1
   peerDependencies:
-    "@lingui/macro": 4
-  peerDependenciesMeta:
-    "@swc/core":
-      optional: true
-    next:
-      optional: true
-  checksum: 49febfd67674ced4484b98aea14427d36d76c3f05ae9ff6b4b810b39ec6fa557fe376c5d78402934e08f8915c424f0197397e85397913b0e9229c94d2a286135
+    vite: ^3 || ^4 || ^5.0.9
+  checksum: 9867a62d2d82d6c955fde6fce5002fbb71778e18c52ca47560933d4046adfebc13e8d731205c8065255a4d1578f6058105e1661c1478b77f9bf9bd56751a4a00
   languageName: node
   linkType: hard
 
@@ -6995,7 +7086,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@repo/smart-order-router@3.15.0, @repo/smart-order-router@workspace:packages/smart-order-router":
+"@repo/smart-order-router@workspace:^, @repo/smart-order-router@workspace:packages/smart-order-router":
   version: 0.0.0-use.local
   resolution: "@repo/smart-order-router@workspace:packages/smart-order-router"
   dependencies:
@@ -7260,6 +7351,22 @@ __metadata:
   peerDependencies:
     rollup: ^1.20.0||^2.0.0
   checksum: 8be16e27863c219edbb25a4e6ec2fe0e1e451d9e917b6a43cf2ae5bc025a6b8faaa40f82a6e53b66d0de37b58ff472c6c3d57a83037ae635041f8df959d6d9aa
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^5.1.3":
+  version: 5.1.4
+  resolution: "@rollup/pluginutils@npm:5.1.4"
+  dependencies:
+    "@types/estree": ^1.0.0
+    estree-walker: ^2.0.2
+    picomatch: ^4.0.2
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: dc0294580effbf68965ed7939c9e469b8c8847b59842e4691fd10d0a8d0b178600bd912694c409ae33600c9059efce72e96f25917cff983afd57f092a7aeb8d2
   languageName: node
   linkType: hard
 
@@ -8118,6 +8225,133 @@ __metadata:
     "@styled-system/core": ^5.1.2
     "@styled-system/css": ^5.1.5
   checksum: becddaa0269004bd788e25d6b5c6f92af1c87009fe31844b4c19bba5233d54e59cfc4c007f8825d812db84c8d1bade5f8a99eb744db41c9124e0c145db64b5b5
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 3fc8e35d16f5abe0af5efe5851f27581225ac405d6a1ca44cda0df064cddfcc29a428c48c2e4bef6cebf627c9ac2f652a096030edb02cf5a120ce28d3c234710
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-remove-jsx-attribute@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-remove-jsx-attribute@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: ff992893c6c4ac802713ba3a97c13be34e62e6d981c813af40daabcd676df68a72a61bd1e692bb1eda3587f1b1d700ea462222ae2153bb0f46886632d4f88d08
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-remove-jsx-empty-expression@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-remove-jsx-empty-expression@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 0fb691b63a21bac00da3aa2dccec50d0d5a5b347ff408d60803b84410d8af168f2656e4ba1ee1f24dab0ae4e4af77901f2928752bb0434c1f6788133ec599ec8
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-replace-jsx-attribute-value@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-replace-jsx-attribute-value@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 1edda65ef4f4dd8f021143c8ec276a08f6baa6f733b8e8ee2e7775597bf6b97afb47fdeefd579d6ae6c959fe2e634f55cd61d99377631212228c8cfb351b8921
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-svg-dynamic-title@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-svg-dynamic-title@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 876cec891488992e6a9aebb8155e2bea4ec461b4718c51de36e988e00e271c6d9d01ef6be17b9effd44b2b3d7db0b41c161a5904a46ae6f38b26b387ad7f3709
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-svg-em-dimensions@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-svg-em-dimensions@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: be0e2d391164428327d9ec469a52cea7d93189c6b0e2c290999e048f597d777852f701c64dca44cd45b31ed14a7f859520326e2e4ad7c3a4545d0aa235bc7e9a
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-transform-react-native-svg@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@svgr/babel-plugin-transform-react-native-svg@npm:8.1.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 85b434a57572f53bd2b9f0606f253e1fcf57b4a8c554ec3f2d43ed17f50d8cae200cb3aaf1ec9d626e1456e8b135dce530ae047eb0bed6d4bf98a752d6640459
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-plugin-transform-svg-component@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/babel-plugin-transform-svg-component@npm:8.0.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 04e2023d75693eeb0890341c40e449881184663056c249be7e5c80168e4aabb0fadd255e8d5d2dbf54b8c2a6e700efba994377135bfa4060dc4a2e860116ef8c
+  languageName: node
+  linkType: hard
+
+"@svgr/babel-preset@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@svgr/babel-preset@npm:8.1.0"
+  dependencies:
+    "@svgr/babel-plugin-add-jsx-attribute": 8.0.0
+    "@svgr/babel-plugin-remove-jsx-attribute": 8.0.0
+    "@svgr/babel-plugin-remove-jsx-empty-expression": 8.0.0
+    "@svgr/babel-plugin-replace-jsx-attribute-value": 8.0.0
+    "@svgr/babel-plugin-svg-dynamic-title": 8.0.0
+    "@svgr/babel-plugin-svg-em-dimensions": 8.0.0
+    "@svgr/babel-plugin-transform-react-native-svg": 8.1.0
+    "@svgr/babel-plugin-transform-svg-component": 8.0.0
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 3a67930f080b8891e1e8e2595716b879c944d253112bae763dce59807ba23454d162216c8d66a0a0e3d4f38a649ecd6c387e545d1e1261dd69a68e9a3392ee08
+  languageName: node
+  linkType: hard
+
+"@svgr/core@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@svgr/core@npm:8.1.0"
+  dependencies:
+    "@babel/core": ^7.21.3
+    "@svgr/babel-preset": 8.1.0
+    camelcase: ^6.2.0
+    cosmiconfig: ^8.1.3
+    snake-case: ^3.0.4
+  checksum: da4a12865c7dc59829d58df8bd232d6c85b7115fda40da0d2f844a1a51886e2e945560596ecfc0345d37837ac457de86a931e8b8d8550e729e0c688c02250d8a
+  languageName: node
+  linkType: hard
+
+"@svgr/hast-util-to-babel-ast@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@svgr/hast-util-to-babel-ast@npm:8.0.0"
+  dependencies:
+    "@babel/types": ^7.21.3
+    entities: ^4.4.0
+  checksum: 88401281a38bbc7527e65ff5437970414391a86158ef4b4046c89764c156d2d39ecd7cce77be8a51994c9fb3249170cb1eb8b9128b62faaa81743ef6ed3534ab
+  languageName: node
+  linkType: hard
+
+"@svgr/plugin-jsx@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@svgr/plugin-jsx@npm:8.1.0"
+  dependencies:
+    "@babel/core": ^7.21.3
+    "@svgr/babel-preset": 8.1.0
+    "@svgr/hast-util-to-babel-ast": 8.0.0
+    svg-parser: ^2.0.4
+  peerDependencies:
+    "@svgr/core": "*"
+  checksum: 0418a9780753d3544912ee2dad5d2cf8d12e1ba74df8053651b3886aeda54d5f0f7d2dece0af5e0d838332c4f139a57f0dabaa3ca1afa4d1a765efce6a7656f2
   languageName: node
   linkType: hard
 
@@ -13160,7 +13394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:^3.0.1":
+"babel-plugin-macros@npm:^3.0.1, babel-plugin-macros@npm:^3.1.0":
   version: 3.1.0
   resolution: "babel-plugin-macros@npm:3.1.0"
   dependencies:
@@ -14711,6 +14945,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cli-table@npm:^0.3.11":
+  version: 0.3.11
+  resolution: "cli-table@npm:0.3.11"
+  dependencies:
+    colors: 1.0.3
+  checksum: 59fb61f992ac9bc8610ed98c72bf7f5d396c5afb42926b6747b46b0f8bb98a0dfa097998e77542ac334c1eb7c18dbf4f104d5783493273c5ec4c34084aa7c663
+  languageName: node
+  linkType: hard
+
 "cli-truncate@npm:^2.1.0":
   version: 2.1.0
   resolution: "cli-truncate@npm:2.1.0"
@@ -15292,6 +15535,23 @@ __metadata:
     parse-json: ^5.0.0
     path-type: ^4.0.0
   checksum: 836d5d8efa750f3fb17b03d6ca74cd3154ed025dffd045304b3ef59637f662bde1e5dc88f8830080d180ec60841719cf4ea2ce73fb21ec694b16865c478ff297
+  languageName: node
+  linkType: hard
+
+"cosmiconfig@npm:^8.1.3":
+  version: 8.3.6
+  resolution: "cosmiconfig@npm:8.3.6"
+  dependencies:
+    import-fresh: ^3.3.0
+    js-yaml: ^4.1.0
+    parse-json: ^5.2.0
+    path-type: ^4.0.0
+  peerDependencies:
+    typescript: ">=4.9.5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: dc339ebea427898c9e03bf01b56ba7afbac07fc7d2a2d5a15d6e9c14de98275a9565da949375aee1809591c152c0a3877bb86dbeaf74d5bd5aaa79955ad9e7a0
   languageName: node
   linkType: hard
 
@@ -16096,6 +16356,13 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.21.0
   checksum: f7be01523282e9bb06c0cd2693d34f245247a29098527d4420628966a2d9aad154bd0e90a6b1cf66d37adcb769cd108cf8a7bd49d76db0fb119af5cdd13644f4
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "date-fns@npm:3.6.0"
+  checksum: 0daa1e9a436cf99f9f2ae9232b55e11f3dd46132bee10987164f3eebd29f245b2e066d7d7db40782627411ecf18551d8f4c9fcdf2226e48bb66545407d448ab7
   languageName: node
   linkType: hard
 
@@ -16920,6 +17187,13 @@ __metadata:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: 19010dacaf0912c895ea262b4f6128574f9ccf8d4b3b65c7e8334ad0079b3706376360e28d8843ff50a78aabcb8f08f0a32dbfacdc77e47ed77ca08b713669b3
+  languageName: node
+  linkType: hard
+
+"entities@npm:^4.4.0":
+  version: 4.5.0
+  resolution: "entities@npm:4.5.0"
+  checksum: 853f8ebd5b425d350bffa97dd6958143179a5938352ccae092c62d1267c4e392a039be1bae7d51b6e4ffad25f51f9617531fedf5237f15df302ccfb452cbf2d7
   languageName: node
   linkType: hard
 
@@ -18373,6 +18647,13 @@ __metadata:
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1"
   checksum: 7e70da539691f6db03a08e7ce94f394ce2eef4180e136d251af299d41f92fb2d28ebcd9a6e393e3728d7970aeb5358705ddf7209d52fbcb2dd4693f95dcf925f
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 6151e6f9828abe2259e57f5fd3761335bb0d2ebd76dc1a01048ccee22fabcfef3c0859300f6d83ff0d1927849368775ec5a6d265dde2f6de5a1be1721cd94efc
   languageName: node
   linkType: hard
 
@@ -21023,7 +21304,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1, import-fresh@npm:^3.3.0":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
   dependencies:
@@ -24297,6 +24578,13 @@ __metadata:
   version: 4.4.0
   resolution: "js-sdsl@npm:4.4.0"
   checksum: 7bb08a2d746ab7ff742720339aa006c631afe05e77d11eda988c1c35fae8e03e492e4e347e883e786e3ce6170685d4780c125619111f0730c11fdb41b04059c7
+  languageName: node
+  linkType: hard
+
+"js-sha256@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "js-sha256@npm:0.10.1"
+  checksum: 6eb5c9f95aa902cec1930f036deb3bc664024b75fede456c0ac74b855797776c18620f47efec36787077a56ba2f3b8d6aacc7733ff8a2b5bb9ce6b655a35c5e6
   languageName: node
   linkType: hard
 
@@ -31634,6 +31922,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svg-parser@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "svg-parser@npm:2.0.4"
+  checksum: b3de6653048212f2ae7afe4a423e04a76ec6d2d06e1bf7eacc618a7c5f7df7faa5105561c57b94579ec831fbbdbf5f190ba56a9205ff39ed13eabdf8ab086ddf
+  languageName: node
+  linkType: hard
+
 "swap-case@npm:^2.0.2":
   version: 2.0.2
   resolution: "swap-case@npm:2.0.2"
@@ -31681,7 +31976,7 @@ __metadata:
     "@lingui/core": ^4.3.0
     "@lingui/macro": ^4.3.0
     "@lingui/react": ^4.3.0
-    "@lingui/swc-plugin": ^4.0.4
+    "@lingui/vite-plugin": ^4.0.4
     "@looksrare/sdk": ^0.10.2
     "@metamask/jazzicon": ^2.0.0
     "@opensea/seaport-js": ^1.2.0
@@ -31691,7 +31986,7 @@ __metadata:
     "@reduxjs/toolkit": ^1.9.3
     "@repo/router-sdk": "workspace:^"
     "@repo/sdk-core": "workspace:^"
-    "@repo/smart-order-router": 3.15.0
+    "@repo/smart-order-router": "workspace:^"
     "@repo/typescript-config": "workspace:^"
     "@repo/uniswapx-sdk": "workspace:^"
     "@repo/universal-router-sdk": "workspace:^"
@@ -31781,6 +32076,7 @@ __metadata:
     array.prototype.flat: ^1.2.4
     array.prototype.flatmap: ^1.2.4
     babel-jest: ^29.6.1
+    babel-plugin-macros: ^3.1.0
     browser-cache-mock: ^0.1.7
     buffer: ^6.0.3
     cids: ^1.0.0
@@ -31873,6 +32169,7 @@ __metadata:
     uuid: ^8.3.2
     video-extensions: ^1.2.0
     vite: ^4.4.9
+    vite-plugin-svgr: ^4.3.0
     wcag-contrast: ^3.0.0
     web-vitals: ^2.1.0
     webpack: ^5.88.2
@@ -33536,6 +33833,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unraw@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "unraw@npm:3.0.0"
+  checksum: 19eee0bc500ce197d262b79723a2c8c81c1d716baaa2a62c48a4d0d6b9e1fd9d350c5df86262e51343d591ab9c8a47ed150317d0b867b2b65795cdc17ef69873
+  languageName: node
+  linkType: hard
+
 "unset-value@npm:^1.0.0":
   version: 1.0.0
   resolution: "unset-value@npm:1.0.0"
@@ -34045,6 +34349,19 @@ __metadata:
   bin:
     vite-node: vite-node.mjs
   checksum: ce111c5c7a4cf65b722baa15cbc065b7bfdbf1b65576dd6372995f6a72b2b93773ec5df59f6c5f08cfe1284806597b44b832efcea50d5971102428159ff4379f
+  languageName: node
+  linkType: hard
+
+"vite-plugin-svgr@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "vite-plugin-svgr@npm:4.3.0"
+  dependencies:
+    "@rollup/pluginutils": ^5.1.3
+    "@svgr/core": ^8.1.0
+    "@svgr/plugin-jsx": ^8.1.0
+  peerDependencies:
+    vite: ">=2.6.0"
+  checksum: 9ade316f20dae881f4ee65e4f2a35be11cf75b22a411bfcdb55bd61382c0249395cb925775e06a49e0fdffe483e64d5a25068c3ddfc5823fb72013cf4d932d17
   languageName: node
   linkType: hard
 

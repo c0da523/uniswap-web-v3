@@ -1,20 +1,25 @@
 // import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 // import react from '@vitejs/plugin-react-swc'
+import { lingui } from '@lingui/vite-plugin'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
-    //   {
-    //   babel: {
-    //     plugins: ['macros'],
-    //     presets: ['@babel/preset-typescript'],
-    //   },
-    // }
     // vanillaExtractPlugin(), // CSS-in-TypeScript 的解决方案
+    react({
+      babel: {
+        plugins: ['babel-plugin-macros'],
+      },
+    }),
+    lingui(),
+    svgr({
+      include: ['**/*.svg', '**/*.svg?component'],
+      exclude: ['**/*.svg?url', '**/*.svg?raw'],
+    }),
   ],
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],

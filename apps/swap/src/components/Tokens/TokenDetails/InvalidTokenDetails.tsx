@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { ThemedText } from 'theme/components'
 
-import { ReactComponent as EyeIcon } from '../../../assets/svg/eye.svg'
+import EyeIcon from '../../../assets/svg/eye.svg?component'
 
 const InvalidDetailsContainer = styled.div`
   padding-top: 128px;

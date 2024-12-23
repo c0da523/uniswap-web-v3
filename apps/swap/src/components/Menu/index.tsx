@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import { ExternalLink } from 'theme/components'
 
-import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
+import MenuIcon from '../../assets/images/menu.svg?component'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { useModalIsOpen, useToggleModal } from '../../state/application/hooks'
 import { ApplicationModal } from '../../state/application/reducer'
