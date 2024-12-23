@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { BrokenLinkIcon } from 'nft/components/icons'
@@ -10,7 +11,6 @@ import { WalletAsset } from 'nft/types'
 import { Dispatch, useRef, useState } from 'react'
 import { AlertTriangle, Link } from 'react-feather'
 import styled, { useTheme } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { colors } from 'theme/colors'
 import { NumberType, useFormatter } from 'utils/formatNumbers'
 

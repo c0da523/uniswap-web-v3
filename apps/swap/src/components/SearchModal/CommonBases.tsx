@@ -1,7 +1,7 @@
 import { Currency } from '@repo/sdk-core'
+import { TraceEvent } from '@src/analytics'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { TraceEvent } from 'analytics'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import { useCachedPortfolioBalancesQuery } from 'components/PrefetchBalancesWrapper/PrefetchBalancesWrapper'
 import { AutoRow } from 'components/Row'

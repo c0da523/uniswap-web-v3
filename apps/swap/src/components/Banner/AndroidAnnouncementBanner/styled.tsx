@@ -1,8 +1,8 @@
+import { BREAKPOINTS } from '@src/theme'
 import { ButtonText } from 'components/Button'
 import { OpacityHoverState } from 'components/Common'
 import { X } from 'react-feather'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { Z_INDEX } from 'theme/zIndex'
 
 export const PopupContainer = styled.div<{ show: boolean }>`

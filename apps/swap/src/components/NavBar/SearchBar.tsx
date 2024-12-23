@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-restricted-imports
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
+import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from '@src/analytics'
 import { useCollectionSearch } from '@src/graphql/data/nft/CollectionSearch'
 import { useSearchTokens } from '@src/graphql/data/SearchTokens'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName, InterfaceSectionName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from 'analytics'
 import clsx from 'clsx'
 import { Search } from 'components/Icons/Search'
 import useDebounce from 'hooks/useDebounce'

@@ -1,6 +1,6 @@
+import { TraceEvent } from '@src/analytics'
 import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import Column from 'components/Column'
 import AlertTriangleFilled from 'components/Icons/AlertTriangleFilled'
 import { LoaderV2 } from 'components/Icons/LoadingSpinner'

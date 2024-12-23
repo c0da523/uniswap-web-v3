@@ -1,11 +1,11 @@
 import { ChainId } from '@repo/sdk-core'
-import { Connector } from '@web3-react/types'
 import {
   deprecatedNetworkConnection,
   networkConnection,
   uniwalletWCV2ConnectConnection,
   walletConnectV2Connection,
-} from 'connection'
+} from '@src/connection'
+import { Connector } from '@web3-react/types'
 import { getChainInfo } from 'constants/chainInfo'
 import { isSupportedChain, SupportedInterfaceChain } from 'constants/chains'
 import { FALLBACK_URLS, RPC_URLS } from 'constants/networks'

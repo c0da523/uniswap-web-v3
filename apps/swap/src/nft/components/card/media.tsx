@@ -1,11 +1,11 @@
 import { Trans } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import Row from 'components/Row'
 import { getHeightFromAspectRatio, getMediaAspectRatio, handleUniformAspectRatio } from 'nft/components/card/utils'
 import { UniformAspectRatio, UniformAspectRatios } from 'nft/types'
 import { ReactNode, useEffect, useRef, useState } from 'react'
 import { Pause, Play } from 'react-feather'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { colors } from 'theme/colors'
 import { ThemedText } from 'theme/components'
 

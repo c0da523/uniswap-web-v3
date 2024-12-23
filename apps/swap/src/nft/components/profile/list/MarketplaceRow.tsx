@@ -1,4 +1,5 @@
 import { t } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { MouseoverTooltip } from 'components/Tooltip'
@@ -10,7 +11,6 @@ import { ListingMarket, WalletAsset } from 'nft/types'
 import { getMarketplaceIcon } from 'nft/utils'
 import { Dispatch, DispatchWithoutAction, useCallback, useEffect, useMemo, useReducer, useState } from 'react'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 import { NumberType, useFormatter } from 'utils/formatNumbers'
 

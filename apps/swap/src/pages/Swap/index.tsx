@@ -1,6 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { ChainId, Currency, CurrencyAmount, Percent, Token } from '@repo/sdk-core'
 import { UNIVERSAL_ROUTER_ADDRESS } from '@repo/universal-router-sdk'
+import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from '@src/analytics'
 import {
   BrowserEvent,
   InterfaceElementName,
@@ -11,7 +12,6 @@ import {
   SwapEventName,
 } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { sendAnalyticsEvent, Trace, TraceEvent, useTrace } from 'analytics'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import AddressInputPanel from 'components/AddressInputPanel'
 import { ButtonError, ButtonLight, ButtonPrimary } from 'components/Button'

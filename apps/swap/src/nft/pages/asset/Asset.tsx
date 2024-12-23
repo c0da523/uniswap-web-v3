@@ -1,6 +1,6 @@
+import { Trace } from '@src/analytics'
 import { useNftAssetDetails } from '@src/graphql/data/nft/Details'
 import { InterfacePageName } from '@uniswap/analytics-events'
-import { Trace } from 'analytics'
 import { AssetDetails } from 'nft/components/details/AssetDetails'
 import { AssetDetailsLoading } from 'nft/components/details/AssetDetailsLoading'
 import { AssetPriceDetails } from 'nft/components/details/AssetPriceDetails'

@@ -90,7 +90,7 @@ module.exports = {
             paths: [
               {
                 name: '@uniswap/analytics',
-                message: `Do not import from '@uniswap/analytics' directly. Use 'analytics' instead.`,
+                message: `Do not import from '@uniswap/analytics' directly. Use '@src/analytics' instead.`,
               },
             ],
           },

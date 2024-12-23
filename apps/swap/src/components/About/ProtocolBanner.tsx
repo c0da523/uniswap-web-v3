@@ -1,6 +1,6 @@
+import { BREAKPOINTS } from '@src/theme'
 import { ButtonEmpty } from 'components/Button'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import meshSrc from './images/Mesh.png'

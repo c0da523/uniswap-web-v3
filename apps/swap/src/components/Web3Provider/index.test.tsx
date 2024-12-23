@@ -1,9 +1,9 @@
+import { sendAnalyticsEvent, user } from '@src/analytics'
+import { connections, getConnection } from '@src/connection'
 import { act, render } from '@testing-library/react'
 import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
 import { MockEIP1193Provider } from '@web3-react/core'
 import { Provider as EIP1193Provider } from '@web3-react/types'
-import { sendAnalyticsEvent, user } from 'analytics'
-import { connections, getConnection } from 'connection'
 import { Connection, ConnectionType } from 'connection/types'
 import { Provider } from 'react-redux'
 import { HashRouter } from 'react-router-dom'
@@ -12,15 +12,15 @@ import { mocked } from 'test-utils/mocked'
 
 import Web3Provider from '.'
 
-jest.mock('analytics', () => ({
+jest.mock('@src/analytics', () => ({
   useTrace: jest.fn(),
   sendAnalyticsEvent: jest.fn(),
   user: { set: jest.fn(), postInsert: jest.fn() },
 }))
-jest.mock('connection', () => {
+jest.mock('@src/connection', () => {
   const { EIP1193 } = jest.requireActual('@web3-react/eip1193')
   const { initializeConnector, MockEIP1193Provider } = jest.requireActual('@web3-react/core')
-  const { ConnectionType } = jest.requireActual('connection')
+  const { ConnectionType } = jest.requireActual('@src/connection')
   const provider: EIP1193Provider = new MockEIP1193Provider()
   const [connector, hooks] = initializeConnector((actions: any) => new EIP1193({ actions, provider }))
   const mockConnection: Connection = {
@@ -61,7 +61,7 @@ describe('Web3Provider', () => {
     expect(result).toBeTruthy()
   })
 
-  describe('analytics', () => {
+  describe('@src/analytics', () => {
     let mockProvider: MockEIP1193Provider
 
     beforeEach(() => {

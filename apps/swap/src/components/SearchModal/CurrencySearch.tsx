@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-restricted-imports
 import { t, Trans } from '@lingui/macro'
 import { ChainId, Currency, CurrencyAmount, Token } from '@repo/sdk-core'
+import { Trace } from '@src/analytics'
 import { TokenBalance } from '@src/graphql/data/__generated__/types-and-hooks'
 import { supportedChainIdFromGQLChain } from '@src/graphql/data/util'
 import { InterfaceEventName, InterfaceModalName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { Trace } from 'analytics'
 import { useCachedPortfolioBalancesQuery } from 'components/PrefetchBalancesWrapper/PrefetchBalancesWrapper'
 import useDebounce from 'hooks/useDebounce'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'

@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { Percent } from '@repo/sdk-core'
+import { TraceEvent } from '@src/analytics'
 import { BrowserEvent, InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import AnimatedDropdown from 'components/AnimatedDropdown'
 import Column from 'components/Column'
 import SpinningLoader from 'components/Loader/SpinningLoader'

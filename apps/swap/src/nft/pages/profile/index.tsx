@@ -1,7 +1,8 @@
 import { Trans } from '@lingui/macro'
+import { Trace } from '@src/analytics'
+import { BREAKPOINTS } from '@src/theme'
 import { InterfacePageName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { Trace } from 'analytics'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import { ButtonPrimary } from 'components/Button'
 import { XXXL_BAG_WIDTH } from 'nft/components/bag/Bag'
@@ -11,7 +12,6 @@ import { useBag, useProfilePageState, useSellAsset, useWalletCollections } from 
 import { ProfilePageStateType } from 'nft/types'
 import { useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 
 import { LIST_PAGE_MARGIN, LIST_PAGE_MARGIN_MOBILE } from './shared'

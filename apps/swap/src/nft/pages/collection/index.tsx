@@ -1,7 +1,7 @@
+import { Trace } from '@src/analytics'
 import { useCollection } from '@src/graphql/data/nft/Collection'
 import { InterfacePageName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { Trace } from 'analytics'
 import Column from 'components/Column'
 import { OpacityHoverState } from 'components/Common'
 import Row from 'components/Row'

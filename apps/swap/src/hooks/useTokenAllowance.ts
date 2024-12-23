@@ -1,7 +1,7 @@
 import { ContractTransaction } from '@ethersproject/contracts'
 import { CurrencyAmount, MaxUint256, Token } from '@repo/sdk-core'
+import { sendAnalyticsEvent, useTrace } from '@src/analytics'
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { useTokenContract } from 'hooks/useContract'
 import { useSingleCallResult } from 'lib/hooks/multicall'
 import { useCallback, useEffect, useMemo, useState } from 'react'

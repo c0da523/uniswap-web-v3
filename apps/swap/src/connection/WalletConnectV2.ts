@@ -1,6 +1,6 @@
 import { ChainId } from '@repo/sdk-core'
+import { sendAnalyticsEvent } from '@src/analytics'
 import { URI_AVAILABLE, WalletConnect, WalletConnectConstructorArgs } from '@web3-react/walletconnect-v2'
-import { sendAnalyticsEvent } from 'analytics'
 import { L1_CHAIN_IDS, L2_CHAIN_IDS } from 'constants/chains'
 import { Z_INDEX } from 'theme/zIndex'
 import { isAndroid, isIOS } from 'utils/userAgent'

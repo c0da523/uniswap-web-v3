@@ -1,7 +1,7 @@
 import { Currency, CurrencyAmount, Token } from '@repo/sdk-core'
+import { TraceEvent } from '@src/analytics'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { TraceEvent } from 'analytics'
 import Loader from 'components/Icons/LoadingSpinner'
 import { useCachedPortfolioBalancesQuery } from 'components/PrefetchBalancesWrapper/PrefetchBalancesWrapper'
 import TokenSafetyIcon from 'components/TokenSafety/TokenSafetyIcon'

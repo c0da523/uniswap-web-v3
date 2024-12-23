@@ -1,7 +1,7 @@
+import { BREAKPOINTS } from '@src/theme'
 import { enableNetConnect } from 'nock'
 import { validPoolDataResponse } from 'test-utils/pools/fixtures'
 import { act, render, screen } from 'test-utils/render'
-import { BREAKPOINTS } from 'theme'
 
 import { PoolDetailsStats } from './PoolDetailsStats'
 

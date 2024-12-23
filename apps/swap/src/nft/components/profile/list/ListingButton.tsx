@@ -1,10 +1,10 @@
 import { Plural, t, Trans } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import { BaseButton } from 'components/Button'
 import { BelowFloorWarningModal } from 'nft/components/profile/list/Modal/BelowFloorWarningModal'
 import { useIsMobile, useSellAsset } from 'nft/hooks'
 import { useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 
 import { findListingIssues } from './utils'
 

@@ -1,10 +1,10 @@
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { StyledImage } from 'nft/components/card/media'
 import { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 
 const BORDER_RADIUS = '12'

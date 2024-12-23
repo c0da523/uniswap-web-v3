@@ -1,7 +1,7 @@
+import { sendAnalyticsEvent } from '@src/analytics'
 import { SwapEventName } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent } from 'analytics'
 
-jest.mock('analytics', () => ({
+jest.mock('@src/analytics', () => ({
   sendAnalyticsEvent: jest.fn(),
 }))
 

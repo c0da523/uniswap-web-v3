@@ -1,6 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { getValidUrlChainName, supportedChainIdFromGQLChain } from '@src/graphql/data/util'
 import { usePoolData } from '@src/graphql/thegraph/PoolData'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import { PoolDetailsHeader } from 'components/Pools/PoolDetails/PoolDetailsHeader'
 import { PoolDetailsLink } from 'components/Pools/PoolDetails/PoolDetailsLink'
@@ -15,7 +16,6 @@ import { useReducer } from 'react'
 import { useParams } from 'react-router-dom'
 import { Text } from 'rebass'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { isAddress } from 'utils'
 
 const PageWrapper = styled(Row)`

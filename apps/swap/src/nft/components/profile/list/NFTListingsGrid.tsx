@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
@@ -7,7 +8,6 @@ import { DropDownOption, ListingMarket } from 'nft/types'
 import { useMemo, useReducer, useRef, useState } from 'react'
 import { ChevronDown } from 'react-feather'
 import styled, { css } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 
 import { Dropdown } from './Dropdown'
 import { NFTListRow } from './NFTListRow'

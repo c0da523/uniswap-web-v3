@@ -1,5 +1,5 @@
+import { sendAnalyticsEvent } from '@src/analytics'
 import { AppDownloadPlatform, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent } from 'analytics'
 import { isAndroid, isIOS } from 'utils/userAgent'
 
 // OneLink will direct to App/Play Store or microsite depending on user agent

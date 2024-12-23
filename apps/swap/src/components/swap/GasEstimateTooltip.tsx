@@ -1,6 +1,6 @@
+import { sendAnalyticsEvent } from '@src/analytics'
 import { InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { sendAnalyticsEvent } from 'analytics'
 import { Gas } from 'components/Icons/Gas'
 import { LoadingOpacityContainer } from 'components/Loader/styled'
 import { UniswapXRouterIcon } from 'components/RouterLabel/UniswapXRouterLabel'

@@ -1,4 +1,5 @@
 import { Currency, CurrencyAmount } from '@repo/sdk-core'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import Row from 'components/Row'
@@ -8,7 +9,6 @@ import { PropsWithChildren, ReactNode } from 'react'
 import { TextProps } from 'rebass'
 import { Field } from 'state/swap/actions'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 import { NumberType, useFormatter } from 'utils/formatNumbers'
 

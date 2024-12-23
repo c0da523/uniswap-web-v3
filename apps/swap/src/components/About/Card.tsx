@@ -1,8 +1,8 @@
+import { TraceEvent } from '@src/analytics'
+import { BREAKPOINTS } from '@src/theme'
 import { BrowserEvent, SharedEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import { Link } from 'react-router-dom'
 import styled, { DefaultTheme } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 export enum CardType {

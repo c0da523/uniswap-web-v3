@@ -1,6 +1,6 @@
 import { ChainId } from '@repo/sdk-core'
+import { sendAnalyticsEvent } from '@src/analytics'
 import { InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent } from 'analytics'
 import { Connection } from 'connection/types'
 import { atom } from 'jotai'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'

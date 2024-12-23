@@ -1,4 +1,5 @@
 import { ChainId } from '@repo/sdk-core'
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import { BaseVariant, FeatureFlag, featureFlagSettings, useUpdateConfig, useUpdateFlag } from 'featureFlags'
 import { DynamicConfigName } from 'featureFlags/dynamicConfig'
@@ -26,7 +27,6 @@ import { X } from 'react-feather'
 import { useModalIsOpen, useToggleFeatureFlags } from 'state/application/hooks'
 import { ApplicationModal } from 'state/application/reducer'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 
 const StyledModal = styled.div`
   position: fixed;

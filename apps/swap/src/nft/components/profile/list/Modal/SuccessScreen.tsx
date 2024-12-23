@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+import { BREAKPOINTS } from '@src/theme'
 import { useWeb3React } from '@web3-react/core'
 import Column from 'components/Column'
 import { ScrollBarStyles } from 'components/Common'
@@ -12,7 +13,6 @@ import { generateTweetForList, pluralize } from 'nft/utils'
 import { useMemo } from 'react'
 import { Twitter, X } from 'react-feather'
 import styled, { css, useTheme } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 import { NumberType, useFormatter } from 'utils/formatNumbers'
 

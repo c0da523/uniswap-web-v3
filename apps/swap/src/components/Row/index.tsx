@@ -1,6 +1,6 @@
+import { Gap } from '@src/theme'
 import { Box } from 'rebass/styled-components'
 import styled from 'styled-components'
-import { Gap } from 'theme'
 
 // TODO(WEB-1983):
 // Setting `width: 100%` by default prevents composability in complex flex layouts.

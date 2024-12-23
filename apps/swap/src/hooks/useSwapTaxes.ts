@@ -1,10 +1,10 @@
 import { ChainId, Percent } from '@repo/sdk-core'
 import { WETH_ADDRESS as getWethAddress } from '@repo/universal-router-sdk'
+import { sendAnalyticsEvent } from '@src/analytics'
 import { InterfaceEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
 import FOT_DETECTOR_ABI from 'abis/fee-on-transfer-detector.json'
 import { FeeOnTransferDetector } from 'abis/types'
-import { sendAnalyticsEvent } from 'analytics'
 import { BIPS_BASE, ZERO_PERCENT } from 'constants/misc'
 import { useEffect, useState } from 'react'
 

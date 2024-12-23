@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
+import { TraceEvent } from '@src/analytics'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import searchIcon from 'assets/svg/search.svg?url'
 import xIcon from 'assets/svg/x.svg?url'
 import { useInfoExplorePageEnabled } from 'featureFlags/flags/infoExplore'

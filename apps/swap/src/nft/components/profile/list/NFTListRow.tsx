@@ -1,3 +1,4 @@
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { VerifiedIcon } from 'nft/components/icons'
@@ -6,7 +7,6 @@ import { ListingMarket, WalletAsset } from 'nft/types'
 import { Dispatch, useEffect, useReducer, useState } from 'react'
 import { Trash2 } from 'react-feather'
 import styled, { css, useTheme } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ThemedText } from 'theme/components'
 
 import { MarketplaceRow } from './MarketplaceRow'

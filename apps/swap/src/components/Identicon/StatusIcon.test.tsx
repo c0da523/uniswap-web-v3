@@ -1,5 +1,5 @@
+import { injectedConnection } from '@src/connection'
 import { useWeb3React } from '@web3-react/core'
-import { injectedConnection } from 'connection'
 import { mocked } from 'test-utils/mocked'
 import { render } from 'test-utils/render'
 

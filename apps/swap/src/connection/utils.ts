@@ -1,10 +1,10 @@
-import BRAVE_ICON from 'assets/wallets/brave-icon.svg'
-import INJECTED_DARK_ICON from 'assets/wallets/browser-wallet-dark.svg'
-import INJECTED_LIGHT_ICON from 'assets/wallets/browser-wallet-light.svg'
-import LEDGER_ICON from 'assets/wallets/ledger-icon.svg'
-import METAMASK_ICON from 'assets/wallets/metamask-icon.svg'
-import RABBY_ICON from 'assets/wallets/rabby-icon.svg'
-import TRUST_WALLET_ICON from 'assets/wallets/trustwallet-icon.svg'
+import BRAVE_ICON from 'assets/wallets/brave-icon.svg?url'
+import INJECTED_DARK_ICON from 'assets/wallets/browser-wallet-dark.svg?url'
+import INJECTED_LIGHT_ICON from 'assets/wallets/browser-wallet-light.svg?url'
+import LEDGER_ICON from 'assets/wallets/ledger-icon.svg?url'
+import METAMASK_ICON from 'assets/wallets/metamask-icon.svg?url'
+import RABBY_ICON from 'assets/wallets/rabby-icon.svg?url'
+import TRUST_WALLET_ICON from 'assets/wallets/trustwallet-icon.svg?url'
 import { Connection, ConnectionType } from 'connection/types'
 
 export const getIsInjected = () => Boolean(window.ethereum)

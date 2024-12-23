@@ -1,6 +1,7 @@
 import { MockedProvider } from '@apollo/client/testing'
 import { i18n } from '@lingui/core'
 import { I18nProvider } from '@lingui/react'
+import ThemeProvider from '@src/theme'
 import { queries } from '@testing-library/dom'
 import { render, renderHook, RenderHookOptions, RenderOptions } from '@testing-library/react'
 import { DEFAULT_LOCALE } from 'constants/locales'
@@ -12,7 +13,6 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import store from 'state'
-import ThemeProvider from 'theme'
 
 i18n.load({
   [DEFAULT_LOCALE]: catalog.messages,

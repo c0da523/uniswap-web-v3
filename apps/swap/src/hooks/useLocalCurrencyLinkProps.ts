@@ -1,4 +1,4 @@
-import { sendAnalyticsEvent } from 'analytics'
+import { sendAnalyticsEvent } from '@src/analytics'
 import { SupportedLocalCurrency } from 'constants/localCurrencies'
 import useParsedQueryString from 'hooks/useParsedQueryString'
 import { useAtom } from 'jotai'

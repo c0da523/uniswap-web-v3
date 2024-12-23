@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
+import { sendAnalyticsEvent } from '@src/analytics'
 import { SharedEventName } from '@uniswap/analytics-events'
-import { sendAnalyticsEvent } from 'analytics'
 import Card, { DarkGrayCard } from 'components/Card'
 import Row, { AutoRow, RowBetween } from 'components/Row'
 import { useEffect, useRef } from 'react'

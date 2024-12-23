@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
+import { Trace } from '@src/analytics'
 import { InterfacePageName } from '@uniswap/analytics-events'
-import { Trace } from 'analytics'
 import { SmallButtonPrimary } from 'components/Button'
 import { useIsMobile } from 'nft/hooks'
 import { Link } from 'react-router-dom'

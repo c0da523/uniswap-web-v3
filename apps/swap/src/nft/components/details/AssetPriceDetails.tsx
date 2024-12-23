@@ -1,7 +1,7 @@
+import { sendAnalyticsEvent, useTrace } from '@src/analytics'
 import { useNftBalance } from '@src/graphql/data/nft/NftBalance'
 import { NFTEventName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { sendAnalyticsEvent, useTrace } from 'analytics'
 import { OpacityHoverState } from 'components/Common'
 import { Share } from 'components/Icons/Share'
 import { CancelListingIcon, VerifiedIcon } from 'nft/components/icons'

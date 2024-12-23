@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { Token } from '@src/graphql/thegraph/__generated__/types-and-hooks'
+import { BREAKPOINTS } from '@src/theme'
 import { useWeb3React } from '@web3-react/core'
 import { PositionInfo } from 'components/AccountDrawer/MiniPortfolio/Pools/cache'
 import useMultiChainPositions from 'components/AccountDrawer/MiniPortfolio/Pools/useMultiChainPositions'
@@ -10,7 +11,6 @@ import { useCurrency } from 'hooks/Tokens'
 import { useSwitchChain } from 'hooks/useSwitchChain'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { currencyId } from 'utils/currencyId'
 
 const PoolDetailsStatsButtonsRow = styled(Row)`

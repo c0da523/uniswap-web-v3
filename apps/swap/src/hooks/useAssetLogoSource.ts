@@ -6,7 +6,7 @@ import uriToHttp from 'lib/utils/uriToHttp'
 import { useCallback, useEffect, useState } from 'react'
 import { isAddress } from 'utils'
 
-import celoLogo from '../assets/svg/celo_logo.svg'
+import celoLogo from '../assets/svg/celo_logo.svg?url'
 
 const BAD_SRCS: { [tokenAddress: string]: true } = {}
 

@@ -1,3 +1,4 @@
+import { BREAKPOINTS } from '@src/theme'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { ReactNode } from 'react'
@@ -5,7 +6,6 @@ import { Check } from 'react-feather'
 import type { To } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import styled, { useTheme } from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ClickableStyle, ThemedText } from 'theme/components'
 
 const InternalLinkMenuItem = styled(Link)`

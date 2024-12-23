@@ -1,6 +1,6 @@
 import { ChainId } from '@repo/sdk-core'
+import { getConnection } from '@src/connection'
 import { useWeb3React } from '@web3-react/core'
-import { getConnection } from 'connection'
 import { didUserReject } from 'connection/utils'
 import { CHAIN_IDS_TO_NAMES, isSupportedChain } from 'constants/chains'
 import { useCallback } from 'react'

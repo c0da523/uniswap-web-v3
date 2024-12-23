@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/react'
 import { BrowserTracing } from '@sentry/tracing'
+import { initializeAnalytics, OriginApplication } from '@src/analytics'
 import { SharedEventName } from '@uniswap/analytics-events'
-import { initializeAnalytics, OriginApplication } from 'analytics'
 import store from 'state'
 import { setOriginCountry } from 'state/user/reducer'
 import { isDevelopmentEnv, isProductionEnv, isSentryEnabled } from 'utils/env'

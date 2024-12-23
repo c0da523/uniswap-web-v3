@@ -1,8 +1,8 @@
+import { TraceEvent } from '@src/analytics'
+import { BREAKPOINTS } from '@src/theme'
 import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import { useDisableNFTRoutes } from 'hooks/useDisableNFTRoutes'
 import styled from 'styled-components'
-import { BREAKPOINTS } from 'theme'
 import { ExternalLink, StyledRouterLink } from 'theme/components'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 

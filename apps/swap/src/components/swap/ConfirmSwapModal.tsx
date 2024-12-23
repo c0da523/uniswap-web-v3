@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { Currency, Percent } from '@repo/sdk-core'
+import { sendAnalyticsEvent, Trace, useTrace } from '@src/analytics'
 import { TransactionStatus } from '@src/graphql/data/__generated__/types-and-hooks'
 import {
   InterfaceEventName,
@@ -8,7 +9,6 @@ import {
   SwapPriceUpdateUserResponse,
 } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { sendAnalyticsEvent, Trace, useTrace } from 'analytics'
 import Badge from 'components/Badge'
 import { ChainLogo } from 'components/Logo/ChainLogo'
 import Modal, { MODAL_TRANSITION_DURATION } from 'components/Modal'

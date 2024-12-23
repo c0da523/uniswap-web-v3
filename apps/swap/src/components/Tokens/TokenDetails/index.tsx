@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+import { Trace } from '@src/analytics'
 import { TokenPriceQuery } from '@src/graphql/data/__generated__/types-and-hooks'
 import { Chain, TokenQuery, TokenQueryData } from '@src/graphql/data/Token'
 import {
@@ -9,7 +10,6 @@ import {
 } from '@src/graphql/data/util'
 import { InterfacePageName } from '@uniswap/analytics-events'
 import { useWeb3React } from '@web3-react/core'
-import { Trace } from 'analytics'
 import { PortfolioLogo } from 'components/AccountDrawer/MiniPortfolio/PortfolioLogo'
 import { AboutSection } from 'components/Tokens/TokenDetails/About'
 import AddressSection from 'components/Tokens/TokenDetails/AddressSection'

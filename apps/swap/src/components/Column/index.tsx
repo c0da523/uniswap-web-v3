@@ -1,5 +1,5 @@
+import { Gap } from '@src/theme'
 import styled from 'styled-components'
-import { Gap } from 'theme'
 
 export const Column = styled.div<{
   gap?: Gap

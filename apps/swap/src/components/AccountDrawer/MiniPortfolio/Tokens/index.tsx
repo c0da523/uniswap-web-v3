@@ -1,7 +1,7 @@
+import { TraceEvent } from '@src/analytics'
 import { TokenBalance } from '@src/graphql/data/__generated__/types-and-hooks'
 import { getTokenDetailsURL, gqlToCurrency, logSentryErrorForUnsupportedChain } from '@src/graphql/data/util'
 import { BrowserEvent, InterfaceElementName, SharedEventName } from '@uniswap/analytics-events'
-import { TraceEvent } from 'analytics'
 import { useCachedPortfolioBalancesQuery } from 'components/PrefetchBalancesWrapper/PrefetchBalancesWrapper'
 import Row from 'components/Row'
 import { DeltaArrow } from 'components/Tokens/TokenDetails/Delta'

@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { sendAnalyticsEvent, Trace } from 'analytics'
+import { sendAnalyticsEvent, Trace } from '@src/analytics'
 import Column from 'components/Column'
 import UniswapXBrandMark from 'components/Logo/UniswapXBrandMark'
 import { Arrow } from 'components/Popover'
